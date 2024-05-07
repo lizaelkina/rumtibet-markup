@@ -1,19 +1,59 @@
 @font-face {
-  font-family: 'Roboto-Regular';
-  font-weight: 400;
+  font-family: 'Nunito Sans Light';
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
-  src: local('Roboto Rerular'), local('Roboto-Rerular'),
-  url(../fonts/Roboto-Regular.woff2) format('woff2'),
-  url(../fonts/Roboto-Regular.woff) format('woff');
+  src: local('Nunito Sans Light'), local('NunitoSans-Light'),
+  url(../fonts/NunitoSans10pt-Light.woff2) format('woff2'),
+  url(../fonts/NunitoSans10pt-Light.woff) format('woff');
 }
 
 @font-face {
-  font-family: 'Roboto-Medium';
-  font-weight: 500;
+  font-family: 'Nunito Sans Regular';
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: local('Roboto Medium'), local('Roboto-Medium'),
-  url(../fonts/Roboto-Medium.woff2) format('woff2'),
-  url(../fonts/Roboto-Medium.woff) format('woff');
+  src: local('Nunito Sans Regular'), local('NunitoSans-Regular'),
+  url(../fonts/NunitoSans10pt-Regular.woff2) format('woff2'),
+  url(../fonts/NunitoSans10pt-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Nunito Sans SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: local('Nunito Sans SemiBold'), local('NunitoSans-SemiBold'),
+  url(../fonts/NunitoSans10pt-SemiBold.woff2) format('woff2'),
+  url(../fonts/NunitoSans10pt-SemiBold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Nunito Sans Bold';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local('Nunito Sans Bold'), local('NunitoSans-Bold'),
+  url(../fonts/NunitoSans10pt-Bold.woff2) format('woff2'),
+  url(../fonts/NunitoSans10pt-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Nunito Sans ExtraBold';
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: local('Nunito Sans ExtraBold'), local('NunitoSans-ExtraBold'),
+  url(../fonts/NunitoSans10pt-ExtraBold.woff2) format('woff2'),
+  url(../fonts/NunitoSans10pt-ExtraBold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'NEXT ART Bold';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local('NEXT ART Bold'), local('NEXTART-Bold'),
+  url(../fonts/Nextartbold.woff2) format('woff2'),
+  url(../fonts/Nextartbold.woff) format('woff');
 }
