@@ -1,0 +1,41 @@
+.btn {
+  box-sizing: border-box;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  outline-color: transparent;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: .192px;
+  cursor: pointer;
+  transition: .3s;
+
+  &_primary {
+    background-color: $accent-primary;
+    color: $white;
+    font-family: $font-link;
+    font-weight: 600;
+
+    &:hover,
+    &:focus {
+      background-color: $white;
+      color: $accent-primary;
+      border: 1px solid $accent-primary;
+    }
+  }
+
+  &_secondary {
+    background-color: $white;
+    color: $accent-primary;
+    font-family: $font-card-title;
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-primary;
+      color: $white;
+      font-family: $font-link;
+      font-weight: 600;
+    }
+  }
+}
