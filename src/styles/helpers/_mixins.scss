@@ -1,0 +1,54 @@
+//fonts
+@mixin section-title {
+  font-family: $font-section-title;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 120%;
+  color: $main;
+}
+
+@mixin section-subtitle {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20;
+  color: $accent-secondary;
+}
+
+@mixin section-text {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: $main;
+}
+
+@mixin header-link {
+  font-family: $font-link;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: normal;
+  color: $white;
+}
+
+@mixin footer-title {
+  font-family: $font-card-title;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24;
+  color: $white;
+}
+
+@mixin footer-text {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18;
+  color: $white;
+}
