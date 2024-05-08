@@ -27,7 +27,7 @@
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
-    transition: scale .5s;
+    transition: scale .5s ease;
 
     &:hover,
     &:focus {

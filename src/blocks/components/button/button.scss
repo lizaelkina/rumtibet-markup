@@ -10,7 +10,7 @@
   line-height: 20px;
   letter-spacing: .192px;
   cursor: pointer;
-  transition: .3s;
+  transition: all .5s ease;
 
   &_primary {
     background-color: $accent-primary;
