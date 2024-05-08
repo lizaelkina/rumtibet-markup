@@ -6,6 +6,9 @@ mixin svg(name)
   svg(data-svg=name)&attributes(attributes)
     use(xlink:href=`./img/sprites/sprite.svg#${name}`)
 
+mixin img(src, alt)
+  img(src=src alt=alt)&attributes(attributes)
+
 mixin section-title(subtitle, title)
   div.section-title&attributes(attributes)
     h3.section-title__subtitle= subtitle
