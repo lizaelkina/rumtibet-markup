@@ -1,3 +1,12 @@
 mixin logo
   a(href='/')
     img.logo&attributes(attributes)(src='./img/logo/logo.svg' alt='Логотип')
+
+mixin svg(name)
+  svg(data-svg=name)&attributes(attributes)
+    use(xlink:href=`./img/sprites/sprite.svg#${name}`)
+
+mixin section-title(subtitle, title)
+  div.section-title&attributes(attributes)
+    h3.section-title__subtitle= subtitle
+    h2.section-title__title= title

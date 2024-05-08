@@ -1,0 +1,15 @@
+.section-title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__subtitle {
+    @include section-subtitle;
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    @include section-title;
+  }
+}
+
