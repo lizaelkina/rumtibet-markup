@@ -1,0 +1,36 @@
+.header {
+  background-color: grey; //удалить после позиционирования
+  margin: 0 auto;
+  max-width: 1180px;
+  box-sizing: border-box;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    width: 137px;
+    height: 72px;
+  }
+
+  &__nav {
+    display: flex;
+    align-self: center;
+    gap: 48px;
+  }
+
+  &__menu {
+    @include list-style-none;
+    display: flex;
+    align-self: center;
+    gap: 24px;
+  }
+
+  &__link {
+    @include header-link;
+  }
+
+  &__button {
+    max-width: 157px;
+  }
+}

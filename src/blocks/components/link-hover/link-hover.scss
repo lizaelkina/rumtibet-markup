@@ -1,0 +1,7 @@
+.link-hover {
+  transition: color .3s ease;
+}
+
+.link-hover:hover {
+  color: $accent-secondary;
+}
