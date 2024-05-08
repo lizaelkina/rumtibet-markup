@@ -1,0 +1,12 @@
+.search {
+  width: 1180px; //удалить после вставки селекторов
+  height: 161px; //удалить после вставки селекторов
+  background-color: $overlay;
+  backdrop-filter: blur(6px);
+  box-sizing: border-box;
+  padding: 40px 42px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  gap: 24px;
+}
