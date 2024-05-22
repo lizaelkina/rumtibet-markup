@@ -2,20 +2,20 @@
   background-color: $background;
   padding-top: 80px;
   padding-bottom: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
+
+  &__container {
+    @include section-indent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
 
   &__info {
     max-width: 590px;
     display: flex;
     flex-direction: column;
     gap: 40px;
-  }
-
-  &__text {
-    @include section-text;
   }
 
   &__list {

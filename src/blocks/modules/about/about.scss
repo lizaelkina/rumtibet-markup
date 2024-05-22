@@ -1,6 +1,7 @@
 .about {
-  @include section-center;
+  @include section-indent;
   display: flex;
+  justify-content: center;
   gap: 120px;
 
   &__img {
