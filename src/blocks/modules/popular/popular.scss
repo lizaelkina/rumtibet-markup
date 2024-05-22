@@ -15,11 +15,58 @@
     justify-content: center;
   }
 
-  &__list {
-    @include list-style-none;
+  &__tour {
+    position: relative;
+    overflow: hidden;
+    border-radius: 32px;
+    width: 380px;
+    height: 500px;
+
+    &:hover .popular__overlay,
+    &:focus .popular__overlay,
+    &:active .popular__overlay, {
+      top: 0
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 83%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__img {
+    aspect-ratio: 380 / 500;
+  }
+
+  &__rating {
+    position: absolute;
+    top: 50px;
+    left: 315px;
+    right: 0;
   }
 
   &__button {
     width: 244px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .popular__tour {
+    pointer-events: none;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .popular__tour {
+    max-width: 285px;
+    max-height: 400px;
+  }
+
+  .popular__img {
+    aspect-ratio: 285 / 400;
   }
 }

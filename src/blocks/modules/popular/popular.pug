@@ -3,10 +3,34 @@ include ../../../views/helpers/mixins
 section.popular
   +section-title('По версии отдыхающих', 'Популярные направления').popular__title
   div.swiper.popular__swiper
-    ul.swiper-wrapper.popular__list
-      +card-tour('./img/popular_1.jpg', 'Озеро возле гор').swiper-slide
-      +card-tour('./img/popular_2.jpg', 'Ночь в горах').swiper-slide
-      +card-tour('./img/popular_3.jpg', 'Йога в горах').swiper-slide
+    div.swiper-wrapper
+      div.popular__tour.swiper-slide
+        +img('./img/popular_1.jpg', 'Озеро возле гор').popular__img
+        +rating-tour('4.9').popular__rating
+        +overlay-tour(
+          'Озеро возле гор',
+          'Романтическое приключение',
+          '480 $',
+          'Его корни уходят в один фрагмент классической латыни 45 года н. э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, «consectetur» и занялся его поисками в классической латинской литературе.'
+          ).popular__overlay
+      div.popular__tour.swiper-slide
+        +img('./img/popular_2.jpg', 'Ночь в горах').popular__img
+        +rating-tour('4.5').popular__rating
+        +overlay-tour(
+          'Ночь в горах',
+          'В компании друзей',
+          '500 $',
+          'Его корни уходят в один фрагмент классической латыни 45 года н. э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, «consectetur» и занялся его поисками в классической латинской литературе.'
+          ).popular__overlay
+      div.popular__tour.swiper-slide
+        +img('./img/popular_3.jpg', 'Йога в горах').popular__img
+        +rating-tour('5.0').popular__rating
+        +overlay-tour(
+          'Йога в горах',
+          'Для тех, кто забоится о себе',
+          '230 $',
+          'Его корни уходят в один фрагмент классической латыни 45 года н. э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, «consectetur» и занялся его поисками в классической латинской литературе.'
+          ).popular__overlay
     div.swiper-button-prev
     div.swiper-button-next
   a.btn.btn_primary.popular__button(href='#') Рейтинг направлений

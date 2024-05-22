@@ -1,0 +1,27 @@
+.rating {
+  background-color: $blur-star;
+  backdrop-filter: blur(4px);
+  width: 65px;
+  height: 32px;
+  border-radius: 4px 0 0 4px;
+  box-sizing: border-box;
+  padding: 4px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  &__svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  &__number {
+    font-family: $font-card-title;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: $main;
+  }
+}

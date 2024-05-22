@@ -14,6 +14,16 @@ mixin section-title(subtitle, title)
     h3.section-title__subtitle= subtitle
     h2.section-title__title= title
 
-mixin card-tour(src, alt)
-  li.card&attributes(attributes)
-    img.card__img(src=src alt=alt)
+mixin rating-tour(rating)
+  div.rating&attributes(attributes)
+    +svg('star').rating__svg
+    p.rating__number= rating
+
+mixin overlay-tour(title, subtitle, price, text)
+  div.overlay&attributes(attributes)
+    div.overlay__info
+      h4.overlay__title= title
+      h5.overlay__subtitle= subtitle
+      p.overlay__price= price
+    p.overlay__text= text
+    a.btn.btn_primary.overlay__button(href='#') Программа тура

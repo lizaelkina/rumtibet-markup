@@ -1,0 +1,89 @@
+.overlay {
+  background-color: $blur;
+  backdrop-filter: blur(6px);
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  transition: all 1s ease-in-out;
+
+  &__info {
+    display: grid;
+    grid-template-areas:
+    "title price"
+    "subtitle price";
+    column-gap: 35px;
+    row-gap: 4px;
+  }
+
+  &__title {
+    grid-area: title;
+    font-family: $font-card-title;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: $white;
+  }
+
+  &__subtitle {
+    grid-area: subtitle;
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $white;
+    text-transform: lowercase;
+  }
+
+  &__price {
+    grid-area: price;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    background-color: $blur;
+    box-shadow: 0 4px 4px 0 $shadow;
+    font-family: $font-card-title;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $white;
+  }
+
+  &__text {
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $white;
+  }
+
+  &__button {
+    margin-top: 65px;
+    width: 186px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .overlay__info {
+    grid-template-areas:
+    "title price"
+    "title price";
+    column-gap: 24px;
+  }
+
+  .overlay__title {
+    align-self: center;
+  }
+
+  .overlay__subtitle {
+    display: none;
+  }
+}
