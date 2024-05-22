@@ -1,1 +1,1 @@
-// import '%modules%/header/header';
+import '%modules%/popular/popular';

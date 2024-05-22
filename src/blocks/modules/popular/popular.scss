@@ -1,0 +1,25 @@
+.popular {
+  @include section-indent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+  &__title {
+    align-items: center;
+  }
+
+  &__swiper {
+    max-width: 1180px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__list {
+    @include list-style-none;
+  }
+
+  &__button {
+    width: 244px;
+  }
+}

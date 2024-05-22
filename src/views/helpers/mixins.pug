@@ -13,3 +13,7 @@ mixin section-title(subtitle, title)
   div.section-title&attributes(attributes)
     h3.section-title__subtitle= subtitle
     h2.section-title__title= title
+
+mixin card-tour(src, alt)
+  li.card&attributes(attributes)
+    img.card__img(src=src alt=alt)

@@ -1,0 +1,12 @@
+include ../../../views/helpers/mixins
+
+section.popular
+  +section-title('По версии отдыхающих', 'Популярные направления').popular__title
+  div.swiper.popular__swiper
+    ul.swiper-wrapper.popular__list
+      +card-tour('./img/popular_1.jpg', 'Озеро возле гор').swiper-slide
+      +card-tour('./img/popular_2.jpg', 'Ночь в горах').swiper-slide
+      +card-tour('./img/popular_3.jpg', 'Йога в горах').swiper-slide
+    div.swiper-button-prev
+    div.swiper-button-next
+  a.btn.btn_primary.popular__button(href='#') Рейтинг направлений
