@@ -55,8 +55,20 @@
 }
 
 @media screen and (max-width: 768px) {
-  .popular__tour {
-    pointer-events: none;
+  .popular {
+    align-items: start;
+
+    &__tour {
+      pointer-events: none;
+    }
+
+    &__title {
+      align-self: start;
+    }
+
+    &__button {
+      align-self: center;
+    }
   }
 }
 
