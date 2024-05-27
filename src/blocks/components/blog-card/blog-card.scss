@@ -1,0 +1,95 @@
+.blog-card {
+  background-color: $white;
+  width: 45%;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 $shadow;
+  display: flex;
+  gap: 24px;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover .blog-card__title {
+    color: $accent-primary;
+    text-decoration: underline 1px solid;
+    text-underline-position: under;
+  }
+
+  &__img {
+    width: 230px;
+    height: 280px;
+    aspect-ratio: 23 / 28;
+    border-radius: 6px;
+  }
+
+  &__info {
+    box-sizing: border-box;
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__title {
+    font-family: $font-card-title;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: $main;
+  }
+
+  &__text {
+    flex-grow: 1;
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $main;
+  }
+
+  &__more {
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-card-title;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+
+    &_date {
+      color: $accent-secondary;
+    }
+
+    &_read {
+      color: $accent-primary;
+      text-transform: lowercase;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .blog-card {
+    padding: 0;
+    flex-direction: column;
+    gap: 16px;
+
+    &__img {
+      width: 100%;
+      border-radius: 0;
+    }
+
+    &__info {
+      padding: 0 16px 16px;
+      flex-basis: 220px;
+      gap: 16px;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+}

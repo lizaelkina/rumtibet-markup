@@ -1,0 +1,1 @@
+import '%components%/blog-card/blog-card';

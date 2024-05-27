@@ -1,0 +1,46 @@
+.blog {
+  background-color: $background;
+  padding-top: 80px;
+  padding-bottom: 100px;
+
+  &__container {
+    @include section-indent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__title {
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__button {
+    margin-top: 10px;
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog__container {
+    align-items: start;
+    gap: 32px;
+  }
+
+  .blog__title {
+    align-items: start;
+  }
+
+  .blog__button {
+    margin-top: 0;
+    align-self: center;
+  }
+}
