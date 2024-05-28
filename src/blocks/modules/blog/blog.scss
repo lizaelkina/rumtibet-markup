@@ -17,8 +17,8 @@
   }
 
   &__list {
+    max-width: 1180px;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
   }

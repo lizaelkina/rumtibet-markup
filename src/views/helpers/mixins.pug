@@ -33,7 +33,8 @@ mixin blog-card(src, title, date, text)
     img(src=src alt=title).blog-card__img
     a.blog-card__info(href='#')
       h4.blog-card__title= title
-      p.blog-card__text= text
+      div.blog-card__wrap
+        p.blog-card__text= text
       div.blog-card__more
         p.blog-card__more.blog-card__more_date= date
         p.blog-card__more.blog-card__more_read Читать статью
