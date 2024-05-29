@@ -1,7 +1,10 @@
 .newsletter {
-  margin: 0 auto 0;
+  background-color: $white;
+  margin: 0 auto -98px;
   max-width: 1180px;
   width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 0 15px 0 $shadow;
   box-sizing: border-box;
   padding: 40px 100px;
   display: flex;
