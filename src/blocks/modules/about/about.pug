@@ -4,7 +4,7 @@ section.about
   div.about__images
     +img('./img/about_1.jpg', 'Горы').about__img
     div.about__video
-      button.about__play(type='button')
+      button.about__play(type='button' aria-label='Посмотреть видео')
       +img('./img/about_2.jpg', 'Домик в горах').about__img
   div.about__info
     +section-title('О нашем походе', 'Исследуйте все горные массивы мира вместе с нами')
