@@ -1,0 +1,91 @@
+.newsletter {
+  margin: 0 auto 0;
+  max-width: 1180px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px 100px;
+  display: flex;
+  gap: 40px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__subtitle {
+    @include section-subtitle;
+    font-size: 18px;
+  }
+
+  &__title {
+    @include section-title;
+    font-size: 26px;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(min-content, max-content);
+    column-gap: 16px;
+    row-gap: 8px;
+  }
+
+  &__label {
+    grid-column-start: 1;
+    font-family: $font-link;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__input {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    box-sizing: border-box;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: $background;
+    outline-color: transparent;
+    font-family: $font-form;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: $main;
+
+    &::placeholder {
+      font-family: $font-form;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 20px;
+      color: $main;
+    }
+  }
+
+  &__button {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  &__info {
+    grid-row-start: 3;
+    grid-column: span 2;
+    text-transform: lowercase;
+    font-family: $font-link;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: $main;
+  }
+
+  &__link {
+    color: $main;
+    text-decoration: underline 1px solid $main;
+    text-underline-position: under;
+  }
+}
