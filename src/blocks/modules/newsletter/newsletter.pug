@@ -1,18 +1,20 @@
 section.newsletter
-  div.newsletter__container
-    h3.newsletter__subtitle Актуально
-    h2.newsletter__title Получайте полезные рассылки о путешествиях
-  form.newsletter__form(name='newsletter' novalidate)
-    label.newsletter__label(for='email-input') Введите e-mail адрес
-    input#email-input.newsletter__input(
-      required
-      type='email'
-      name='email'
-      autocomplete='off'
-      placeholder='name@domain.com')
-    button.btn.btn_primary.newsletter__button(type='submit') Подписаться на новости
-    p.newsletter__info
-      | Подписываясь на новости, вы автоматически соглашаетесь с
-      | #[a.newsletter__link.link-hover(href='./files/privacy-policy.pdf' target='_blank') условиями обработки персональных данных]
-      | и
-      | #[a.newsletter__link.link-hover(href='./files/rules-of-advertising-mailings.pdf' target='_blank') правилами рекламных рассылок]
+  div.newsletter__wrap
+    div.newsletter__container
+      div.newsletter__title-wrap
+        h3.newsletter__subtitle Актуально
+        h2.newsletter__title Получайте полезные рассылки о путешествиях
+      form.newsletter__form(name='newsletter' novalidate)
+        label.newsletter__label(for='email-input') Введите e-mail адрес
+        input#email-input.newsletter__input(
+          required
+          type='email'
+          name='email'
+          autocomplete='off'
+          placeholder='name@domain.com')
+        button.btn.btn_primary.newsletter__button(type='submit') Подписаться на новости
+        p.newsletter__info
+          | Подписываясь на новости, вы автоматически соглашаетесь с
+          | #[a.newsletter__link.link-hover(href='./files/privacy-policy.pdf' target='_blank') условиями обработки персональных данных]
+          | и
+          | #[a.newsletter__link.link-hover(href='./files/rules-of-advertising-mailings.pdf' target='_blank') правилами рекламных рассылок]

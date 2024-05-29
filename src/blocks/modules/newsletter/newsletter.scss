@@ -1,16 +1,24 @@
 .newsletter {
-  background-color: $white;
-  margin: 0 auto -98px;
-  max-width: 1180px;
-  width: 100%;
-  border-radius: 6px;
-  box-shadow: 0 0 15px 0 $shadow;
-  box-sizing: border-box;
-  padding: 40px 100px;
-  display: flex;
-  gap: 60px;
+
+  &__wrap {
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 1180px;
+  }
 
   &__container {
+    background-color: $white;
+    margin-bottom: -98px;
+    box-sizing: border-box;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    border-radius: 6px;
+    box-shadow: 0 0 15px 0 $shadow;
+  }
+
+  &__title-wrap {
     display: flex;
     flex-direction: column;
     gap: 8px;

@@ -1,5 +1,5 @@
 .popular {
-  @include section-indent;
+  @include section-on-page;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,7 +58,6 @@
 
 @media screen and (max-width: 768px) {
   .popular {
-    align-items: start;
 
     &__tour {
       pointer-events: none;

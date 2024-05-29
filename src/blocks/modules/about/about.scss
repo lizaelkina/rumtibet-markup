@@ -1,5 +1,5 @@
 .about {
-  @include section-indent;
+  @include section-on-page;
   display: flex;
   justify-content: center;
   gap: 120px;
@@ -51,5 +51,11 @@
 
   &__button {
     width: 200px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about {
+    gap: 40px;
   }
 }
