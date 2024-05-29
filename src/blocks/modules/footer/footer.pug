@@ -1,3 +1,37 @@
+mixin footer-item(title, href)
+  li.footer__item
+    +svg('arrowList').footer__svg
+    a.footer__text.link-hover(href=href)= title
+
 footer.footer
   div.footer__top
+    div.footer__info
+      div.footer__contact-wrap
+        h3.footer__title Компания «РумТибет»
+        p.footer__text
+          | Его корни уходят в один фрагмент классической латыни 45 года н.э.,
+          | то есть более двух тысячелетий назад. Ричард МакКлинток,
+          | профессор латыни из колледжа Hampered-Sydney.
+      div.footer__list-wrap
+        h3.footer__title Наши услуги
+        ul.footer__list
+          +footer-item('Прогулки в горы летом', '#')
+          +footer-item('Зимние походы в горы', '#')
+          +footer-item('Посещение храмов в горах', '#')
+          +footer-item('Экстремальные виды туризма', '#')
+          +footer-item('Походы в джунглях Амазонии', '#')
+          +footer-item('Поездка в Африку', '#')
+      div.footer__list-wrap
+        h3.footer__title Важно для путешествий
+        ul.footer__list
+          +footer-item('Как собраться в долгий поход?', '#')
+          +footer-item('Жизненно важные предметы для похода', '#')
+          +footer-item('Медицинская страховка, гарантии безопасности', '#')
+          +footer-item('Если вы врач - загляните сюда', '#')
+
   div.footer__bottom
+    div.footer__copyright
+      p.footer__text
+        | ИП Константинопольский К.К., 2023
+      a.footer__link.link-hover(href='./files/privacy-policy.pdf' target='_blank')
+        | Политика обработки персональных данных

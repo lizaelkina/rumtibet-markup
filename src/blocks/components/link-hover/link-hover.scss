@@ -4,4 +4,6 @@
 
 .link-hover:hover {
   color: $accent-secondary;
+  text-decoration: underline 1px solid;
+  text-underline-position: under;
 }
