@@ -6,7 +6,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 4px 0 $shadow;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   column-gap: 24px;
   overflow: hidden;
   cursor: pointer;
