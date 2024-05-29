@@ -70,15 +70,15 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
+  }
 
-    &_date {
-      color: $accent-secondary;
-    }
+  &__date {
+    color: $accent-secondary;
+  }
 
-    &_read {
-      color: $accent-primary;
-      text-transform: lowercase;
-    }
+  &__read {
+    color: $accent-primary;
+    text-transform: lowercase;
   }
 }
 

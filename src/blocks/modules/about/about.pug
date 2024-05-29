@@ -1,5 +1,3 @@
-include ../../../views/helpers/mixins
-
 section.about
   div.about__images
     +img('./img/about_1.jpg', 'Горы').about__img
@@ -7,6 +5,12 @@ section.about
       button.about__play(type='button' aria-label='Посмотреть видео')
       +img('./img/about_2.jpg', 'Домик в горах').about__img
   div.about__info
-    +section-title('О нашем походе', 'Исследуйте все горные массивы мира вместе с нами')
-    p.about__text Его корни уходят в&nbsp;один фрагмент классической латыни 45&nbsp;года н.э., то&nbsp;есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из&nbsp;колледжа Hampden-Sydney, штат Вирджиния, взял одно из&nbsp;самых странных слов в&nbsp;Lorem Ipsum, &quot;consectetur&quot;и занялся его поисками в&nbsp;классической латинской литературе.
+    +section-title(
+      'О нашем походе',
+      'Исследуйте все горные массивы мира вместе с нами')
+    p.about__text
+      | Его корни уходят в&nbsp;один фрагмент классической латыни 45&nbsp;года н.э.,
+      | то&nbsp;есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из&nbsp;колледжа
+      | Hampered-Sydney, штат Вирджиния, взял одно из&nbsp;самых странных слов в&nbsp;Lorem Ipsum, &quot;conjecture&quot;и
+      | занялся его поисками в&nbsp;классической латинской литературе.
     a.btn.btn_primary.about__button(href='#') Программа тура

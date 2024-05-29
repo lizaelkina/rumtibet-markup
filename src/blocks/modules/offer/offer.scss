@@ -39,27 +39,26 @@
     "svg text";
     column-gap: 10px;
     row-gap: 4px;
+  }
 
-    &_title {
-      grid-area: title;
-      font-family: $font-card-title;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 20px;
-      color: $main;
-      letter-spacing: .216px;
-    }
+  &__item-title {
+    grid-area: title;
+    font-family: $font-card-title;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: $main;
+  }
 
-    &_text {
-      grid-area: text;
-      font-family: $font-primary;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 20px;
-      color: $main;
-    }
+  &__item-text {
+    grid-area: text;
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $main;
   }
 
   &__button {
