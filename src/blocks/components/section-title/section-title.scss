@@ -11,3 +11,13 @@
     @include section-title;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .section-title__subtitle {
+    font-size: 16px;
+  }
+
+  .section-title__title {
+    font-size: 24px;
+  }
+}
