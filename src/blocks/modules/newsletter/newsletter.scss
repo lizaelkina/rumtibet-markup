@@ -13,7 +13,7 @@
     padding: 40px 100px;
     display: flex;
     justify-content: space-between;
-    gap: 60px;
+    gap: 30px;
     border-radius: 6px;
     box-shadow: 0 0 15px 0 $shadow;
   }
@@ -32,6 +32,10 @@
   &__title {
     @include section-title;
     font-size: 26px;
+
+    &_mobile {
+      display: none;
+    }
   }
 
   &__form {
@@ -82,7 +86,7 @@
     grid-row-start: 2;
   }
 
-  &__info {
+  &__caption {
     grid-row-start: 3;
     grid-column: span 2;
     text-transform: lowercase;
@@ -98,5 +102,66 @@
     color: $main;
     text-decoration: underline 1px solid;
     text-underline-position: under;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .newsletter {
+
+    &__container {
+      padding: 40px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .newsletter {
+
+    &__container {
+      margin-bottom: -139px;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    &__caption {
+      margin-top: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .newsletter {
+
+    &__container {
+      margin-bottom: 50px;
+      padding: 24px;
+    }
+
+    &__title {
+      font-size: 24px;
+      display: none;
+
+      &_mobile {
+        display: block;
+      }
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    &__button {
+      max-width: 245px;
+    }
   }
 }
