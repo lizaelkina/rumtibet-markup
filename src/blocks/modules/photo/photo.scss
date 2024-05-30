@@ -24,7 +24,7 @@
     background-color: $accent-primary;
     cursor: pointer;
 
-    &:before {
+    &::before {
       content: '';
       @include position-center;
       width: 100%;
@@ -38,7 +38,7 @@
       transition: opacity .3s ease;
     }
 
-    &:hover:before {
+    &:hover::before {
       opacity: .6;
     }
 
