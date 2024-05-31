@@ -13,7 +13,7 @@
   }
 
   &__title {
-    align-items: center;
+    text-align: center;
   }
 
   &__list {
@@ -31,7 +31,13 @@
 
 @media screen and (max-width: 768px) {
   .blog__container {
+    align-items: start;
     gap: 32px;
+  }
+
+  .blog__title {
+    align-items: start;
+    text-align: start;
   }
 
   .blog__button {

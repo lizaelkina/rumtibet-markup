@@ -18,6 +18,10 @@
     gap: 40px;
   }
 
+  &__title {
+    align-items: start;
+  }
+
   &__list {
     @include list-style-none;
     display: flex;

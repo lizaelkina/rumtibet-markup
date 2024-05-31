@@ -6,7 +6,7 @@
   gap: 40px;
 
   &__title {
-    align-items: center;
+    text-align: center;
   }
 
   &__grid {
@@ -94,6 +94,7 @@
 
     &__title {
       align-items: start;
+      text-align: start;
     }
 
     &__button {

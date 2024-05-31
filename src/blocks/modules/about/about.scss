@@ -45,6 +45,10 @@
     gap: 40px;
   }
 
+  &__title {
+    align-items: start;
+  }
+
   &__text {
     @include section-text;
   }
