@@ -72,3 +72,17 @@
     width: 178px;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .photo__grid {
+    display: none;
+  }
+
+  .photo__swiper {
+    display: block;
+  }
+
+  .photo__img {
+    aspect-ratio: 280 / 250;
+  }
+}
