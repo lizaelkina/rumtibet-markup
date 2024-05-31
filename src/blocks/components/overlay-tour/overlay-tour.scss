@@ -56,7 +56,15 @@
     color: $white;
   }
 
+  &__wrap {
+    min-height: 216px;
+  }
+
   &__text {
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     font-family: $font-primary;
     font-style: normal;
     font-weight: 400;
@@ -85,5 +93,26 @@
 
   .overlay__subtitle {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .overlay__title {
+    font-size: 18px;
+  }
+
+  .overlay__text {
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .overlay__price {
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .overlay__button {
+    margin-top: 0;
   }
 }

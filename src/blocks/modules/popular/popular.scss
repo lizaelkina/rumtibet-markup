@@ -25,7 +25,7 @@
     &:hover .popular__overlay,
     &:focus .popular__overlay,
     &:active .popular__overlay, {
-      top: 0
+      top: 0;
     }
   }
 
@@ -58,24 +58,31 @@
 
 @media screen and (max-width: 768px) {
   .popular {
+    align-items: start;
+    gap: 32px;
 
     &__tour {
-      pointer-events: none;
+      max-width: 285px;
+      max-height: 400px;
+
+      &:hover .popular__overlay,
+      &:focus .popular__overlay,
+      &:active .popular__overlay, {
+        top: 83%;
+      }
+    }
+
+    &__title {
+      align-items: start;
+    }
+
+    &__img {
+      aspect-ratio: 285 / 400;
     }
 
     &__button {
+      margin-top: 0;
       align-self: center;
     }
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .popular__tour {
-    max-width: 285px;
-    max-height: 400px;
-  }
-
-  .popular__img {
-    aspect-ratio: 285 / 400;
   }
 }

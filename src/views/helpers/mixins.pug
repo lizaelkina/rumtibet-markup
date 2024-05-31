@@ -25,7 +25,8 @@ mixin overlay-tour(title, subtitle, price, text)
       h4.overlay__title= title
       h5.overlay__subtitle= subtitle
       p.overlay__price= price
-    p.overlay__text= text
+    div.overlay__wrap
+      p.overlay__text= text
     a.btn.btn_primary.overlay__button(href='#') Программа тура
 
 mixin blog-card(src, title, date, text)
