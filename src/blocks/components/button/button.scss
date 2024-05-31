@@ -12,6 +12,10 @@
   cursor: pointer;
   transition: all .5s ease;
 
+  &:disabled {
+    pointer-events: none;
+  }
+
   &_primary {
     background-color: $accent-primary;
     color: $white;

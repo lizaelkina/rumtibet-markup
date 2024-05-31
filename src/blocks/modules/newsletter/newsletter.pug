@@ -5,15 +5,16 @@ section.newsletter
         h3.newsletter__subtitle Актуально
         h2.newsletter__title Получайте полезные рассылки о путешествиях
         h2.newsletter__title_mobile Полезные рассылки
-      form.newsletter__form(name='newsletter' novalidate)
-        label.newsletter__label(for='email-input') Введите e-mail адрес
-        input#email-input.newsletter__input(
+      form.form.newsletter__form(name='newsletter' novalidate)
+        label.form__label.newsletter__label(for='email-input') Введите e-mail адрес
+        span.form__error.email-input-error.newsletter__error (name@domain.ru)
+        input#email-input.form__input.newsletter__input(
           required
           type='email'
           name='email'
           autocomplete='off'
-          placeholder='name@domain.com')
-        button.btn.btn_primary.newsletter__button(type='submit') Подписаться на новости
+          placeholder='name@domain.ru')
+        button.btn.btn_primary.form__button.newsletter__button(type='submit') Подписаться на новости
         p.newsletter__caption
           | Подписываясь на новости, вы автоматически соглашаетесь с
           | #[a.newsletter__link.link-hover(href='./files/privacy-policy.pdf' target='_blank') условиями обработки персональных данных]

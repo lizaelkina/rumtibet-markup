@@ -81,6 +81,13 @@
     }
   }
 
+  &__error {
+    position: absolute;
+    top: 0;
+    left: 175px;
+    right: 0;
+  }
+
   &__button {
     grid-column-start: 2;
     grid-row-start: 2;
@@ -162,6 +169,16 @@
 
     &__button {
       max-width: 245px;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .newsletter {
+
+    &__error {
+      top: -20px;
+      left: 0;
     }
   }
 }

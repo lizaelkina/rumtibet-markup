@@ -1,0 +1,25 @@
+.form {
+  position: relative;
+
+  &__input_type_error {
+    border: 1px solid $error;
+  }
+
+  &__error {
+    display: none;
+    font-family: $font-form;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: $error;
+
+    &_active {
+      display: block;
+    }
+  }
+}
+
+.newsletter .form__input_type_error {
+  border: 1px solid $error;
+}
