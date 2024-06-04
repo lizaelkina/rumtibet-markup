@@ -1,0 +1,25 @@
+.menu {
+
+  &__button {
+    display: flex;
+    box-sizing: border-box;
+    padding: 6px;
+    border: none;
+    background-color: transparent;
+    outline-color: transparent;
+    fill: $white;
+    cursor: pointer;
+    transition: transform .3s;
+
+    &:hover,
+    &:focus {
+      fill: $accent-secondary;
+      transform: scale(1.3);
+    }
+  }
+
+  &__svg {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,11 +1,12 @@
 .header {
+  position: sticky;
   margin: 0 auto -104px;
   max-width: 1180px;
-  width: 100%;
   box-sizing: content-box;
   padding: 16px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   &__logo {
     width: 137px;
@@ -31,5 +32,26 @@
 
   &__button {
     width: 157px;
+  }
+
+  &__burger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__burger {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    width: 84px;
+    height: 44px;
   }
 }
