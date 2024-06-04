@@ -1,5 +1,4 @@
 .intro {
-  z-index: -1;
   padding-top: 551px;
   padding-bottom: 82px;
   background-color: $accent-primary;
@@ -23,9 +22,34 @@
     font-family: $font-banner;
     font-style: normal;
     font-weight: 800;
-    font-size: 50px;
+    font-size: clamp(28px, 6vh, 50px);
     line-height: 150%;
     letter-spacing: 1px;
     color: $white;
+  }
+
+  &__button {
+    max-width: 213px;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    padding-top: 298px;
+    padding-bottom: 50px;
+
+    &__container {
+      align-items: start;
+      gap: 32px;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__button {
+      display: flex;
+    }
   }
 }

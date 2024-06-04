@@ -11,3 +11,9 @@
   display: flex;
   gap: 24px;
 }
+
+@media screen and (max-width: 768px) {
+  .search {
+    display: none;
+  }
+}
