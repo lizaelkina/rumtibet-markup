@@ -1,7 +1,6 @@
 .offer {
   background-color: $background;
-  padding-top: 80px;
-  padding-bottom: 100px;
+  padding: 80px 0 100px;
 
   &__container {
     @include section-on-page;
@@ -12,14 +11,17 @@
   }
 
   &__info {
-    max-width: 590px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: minmax(min-content, 590px);
+    row-gap: 40px;
   }
 
   &__title {
     align-items: start;
+  }
+
+  &__text {
+    @include section-text;
   }
 
   &__list {
@@ -32,8 +34,9 @@
   &__svg {
     grid-area: svg;
     align-self: center;
-    width: 50px;
-    height: 50px;
+    max-width: 50px;
+    width: 100%;
+    aspect-ratio: 1;
   }
 
   &__item {
@@ -66,13 +69,12 @@
   }
 
   &__button {
-    width: 236px;
+    max-width: 236px;
   }
 
   &__images {
-    max-width: 510px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, minmax(150px, 250px));
     gap: 10px;
   }
 
@@ -90,5 +92,35 @@
       border-top-left-radius: 20%;
       border-bottom-right-radius: 20%;
     }
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .offer__container {
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .offer {
+    padding: 50px 0 50px;
+
+    &__button {
+      justify-self: center;
+    }
+
+    &__images {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .offer__info {
+    row-gap: 32px;
+  }
+
+  .offer__text {
+    font-size: 16px;
   }
 }
