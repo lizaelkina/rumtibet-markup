@@ -1,0 +1,13 @@
+div.menu
+  div.overlay
+  div.menu__container
+    div.menu__content
+      div.menu__header
+        button.menu__button(type='button' aria-label='Закрыть меню' aria-expanded='true')
+          +svg('close').menu__svg
+      ul.menu__list
+        +link-item('Про гида', '#about')
+        +link-item('Программа тура', '#popular')
+        +link-item('Стоимость', '#offer')
+        +link-item('Блог', '#blog')
+        +link-item('Контакты', '#footer')
