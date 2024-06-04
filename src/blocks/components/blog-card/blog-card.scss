@@ -20,7 +20,6 @@
 
   &__img {
     background-color: $accent-primary;
-    height: 280px;
     aspect-ratio: 230 / 280;
     border-radius: 6px;
   }
@@ -89,11 +88,11 @@
 @media screen and (max-width: 1024px) {
   .blog-card {
     max-width: 285px;
-    min-height: 496px;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    grid-template-columns: none;
+    grid-template-rows: 280px 205px;
+    row-gap: 16px;
+    box-shadow: none;
 
     &__img {
       border-radius: 0;
@@ -110,7 +109,7 @@
     }
 
     &__text {
-      -webkit-line-clamp: 4;
+      -webkit-line-clamp: 3;
     }
   }
 }
