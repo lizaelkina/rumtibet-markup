@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars,no-undef
 const swiper = new Swiper('.photo__swiper',
   {
     direction: 'horizontal',
