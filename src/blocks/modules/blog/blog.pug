@@ -1,7 +1,7 @@
 section.blog
   div.blog__container
     +section-title('Делимся впечатлениями', 'Блог о путешествиях').blog__title
-    div.blog__list
+    ul.blog__list
       +blog-card(
         './img/blog_1.jpg',
         'Красивая Италия, какая она в реальности?',
@@ -32,7 +32,7 @@ section.blog
         'Для современного мира базовый.')
 
     div.swiper.blog__swiper
-      div.swiper-wrapper
+      ul.swiper-wrapper.blog__wrap
         +blog-card(
           './img/blog_1.jpg',
           'Красивая Италия, какая она в реальности?',
