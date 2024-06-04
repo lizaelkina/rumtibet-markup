@@ -11,14 +11,15 @@
     margin-bottom: -98px;
     box-sizing: border-box;
     padding: 40px 100px;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
     border-radius: 6px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 30px;
     box-shadow: 0 0 15px 0 $shadow;
   }
 
   &__title-wrap {
+    grid-column: span 2;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -39,9 +40,10 @@
   }
 
   &__form {
+    grid-column: 3 / 6;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: minmax(min-content, max-content);
+    grid-template-rows: minmax(min-content, max-content) 44px minmax(min-content, max-content);
     column-gap: 16px;
     row-gap: 8px;
   }
@@ -134,6 +136,7 @@
 
     &__container {
       margin-bottom: -139px;
+      display: flex;
       flex-direction: column;
       gap: 18px;
     }

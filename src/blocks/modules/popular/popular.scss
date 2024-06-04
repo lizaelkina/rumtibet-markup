@@ -12,15 +12,15 @@
   &__swiper {
     max-width: 1180px;
     display: flex;
-    justify-content: center;
   }
 
   &__tour {
     position: relative;
     overflow: hidden;
     border-radius: 32px;
-    width: 380px;
-    height: 500px;
+    max-width: 380px;
+    width: 100%;
+    max-height: 500px;
 
     &:hover .popular__overlay,
     &:focus .popular__overlay,
@@ -52,7 +52,7 @@
 
   &__button {
     margin-top: 10px;
-    width: 244px;
+    max-width: 244px;
   }
 }
 
@@ -79,6 +79,10 @@
 
     &__img {
       aspect-ratio: 285 / 400;
+    }
+
+    &__rating {
+      left: 220px;
     }
 
     &__button {

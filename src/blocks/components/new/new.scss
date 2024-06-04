@@ -1,6 +1,7 @@
 .new::after {
   content: 'new';
   max-width: 44px;
+  width: 100%;
   box-sizing: border-box;
   padding: 2px 10px;
   border-radius: 4px;

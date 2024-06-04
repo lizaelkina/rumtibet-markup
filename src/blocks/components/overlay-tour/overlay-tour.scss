@@ -25,6 +25,9 @@
     font-size: 24px;
     line-height: 120%;
     color: $white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   &__subtitle {
@@ -36,6 +39,9 @@
     line-height: 18px;
     color: $white;
     text-transform: lowercase;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   &__price {
@@ -75,7 +81,7 @@
 
   &__button {
     margin-top: 65px;
-    width: 186px;
+    max-width: 186px;
   }
 }
 
