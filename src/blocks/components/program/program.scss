@@ -1,4 +1,4 @@
-.overlay {
+.program {
   background-color: $blur;
   backdrop-filter: blur(6px);
   box-sizing: border-box;
@@ -86,39 +86,39 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .overlay__info {
+  .program__info {
     grid-template-areas:
     "title price"
     "title price";
     column-gap: 24px;
   }
 
-  .overlay__title {
+  .program__title {
     align-self: center;
   }
 
-  .overlay__subtitle {
+  .program__subtitle {
     display: none;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .overlay__title {
+  .program__title {
     font-size: 18px;
   }
 
-  .overlay__text {
+  .program__text {
     font-size: 14px;
     line-height: normal;
   }
 
-  .overlay__price {
+  .program__price {
     padding: 6px 12px;
     font-size: 16px;
     line-height: 18px;
   }
 
-  .overlay__button {
+  .program__button {
     margin-top: 0;
   }
 }

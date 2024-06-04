@@ -19,15 +19,15 @@ mixin rating-tour(rating)
     +svg('star').rating__svg
     p.rating__number= rating
 
-mixin overlay-tour(title, subtitle, price, text)
-  article.overlay&attributes(attributes)
-    div.overlay__info
-      h4.overlay__title= title
-      h5.overlay__subtitle= subtitle
-      p.overlay__price= price
-    div.overlay__wrap
-      p.overlay__text= text
-    a.btn.btn_primary.overlay__button(href='#') Программа тура
+mixin program-tour(title, subtitle, price, text)
+  article.program&attributes(attributes)
+    div.program__info
+      h4.program__title= title
+      h5.program__subtitle= subtitle
+      p.program__price= price
+    div.program__wrap
+      p.program__text= text
+    a.btn.btn_primary.program__button(href='#') Программа тура
 
 mixin blog-card(src, title, date, text)
   li.blog-card&attributes(attributes)
