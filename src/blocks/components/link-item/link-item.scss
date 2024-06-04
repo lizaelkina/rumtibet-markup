@@ -1,0 +1,38 @@
+.link-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all .5s ease;
+
+  &:hover .link-item__text {
+    color: $accent-secondary;
+    text-decoration: underline 1px solid;
+    text-underline-position: under;
+  }
+
+  &:hover .link-item__svg {
+    fill: $accent-secondary;
+  }
+
+  &__text {
+    @include footer-text;
+
+    &_link {
+      text-decoration: underline 1px solid;
+      text-underline-position: under;
+    }
+  }
+
+  &__svg {
+    max-width: 6px;
+    width: 100%;
+    aspect-ratio: 6 / 10;
+    fill: $white;
+    cursor: pointer;
+    transition: all .5s ease;
+
+    &:hover {
+      fill: $accent-secondary;
+    }
+  }
+}

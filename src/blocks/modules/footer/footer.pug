@@ -1,7 +1,6 @@
-mixin footer-item(title, href)
-  li.footer__item&attributes(attributes)
-    +svg('arrowList').footer__svg.footer__svg_marker
-    a.footer__text.link-hover(href=href)= title
+mixin social(href, title, svg)
+  a(href=href target='_blank' aria-label=title)
+    +svg(svg).footer__svg
 
 footer.footer
   div.footer__top
@@ -16,30 +15,26 @@ footer.footer
           a.footer__text.footer__text_link.link-hover(href='mailto:info@domain.ru') info@domain.ru
           a.footer__text.footer__text_link.link-hover(href='tel:+71234567890') +7 (123) 456-78-90
         div.footer__social-list
-          a(href='https://web.telegram.org/k/' target='_blank' aria-label='Ссылка на телеграм')
-            +svg('telegram').footer__svg.footer__svg_social
-          a(href='https://vk.com/' target='_blank' aria-label='Ссылка на вконтакте')
-            +svg('vk').footer__svg.footer__svg_social
-          a(href='https://ru.pinterest.com/' target='_blank' aria-label='Ссылка на пинтерест')
-            +svg('pinterest').footer__svg.footer__svg_social
-          a(href='https://www.skype.com/ru/' target='_blank' aria-label='Ссылка на скайп')
-            +svg('skype').footer__svg.footer__svg_social
+          +social('https://web.telegram.org/k/', 'Телеграм', 'telegram')
+          +social('https://vk.com/', 'Вконтакте', 'vk')
+          +social('https://ru.pinterest.com/', 'Pinterest', 'pinterest')
+          +social('https://www.skype.com/ru/', 'Skype', 'skype')
       div.footer__column.footer__column_list_left
         h3.footer__title Наши услуги
         ul.footer__list
-          +footer-item('Прогулки в горы летом', '#')
-          +footer-item('Зимние походы в горы', '#')
-          +footer-item('Посещение храмов в горах', '#')
-          +footer-item('Экстремальные виды туризма', '#')
-          +footer-item('Походы в джунглях Амазонии', '#').new
-          +footer-item('Поездка в Африку', '#')
+          +link-item('Прогулки в горы летом', '#')
+          +link-item('Зимние походы в горы', '#')
+          +link-item('Посещение храмов в горах', '#')
+          +link-item('Экстремальные виды туризма', '#')
+          +link-item('Походы в джунглях Амазонии', '#').new
+          +link-item('Поездка в Африку', '#')
       div.footer__column.footer__column_list_right
         h3.footer__title Важно для путешествий
         ul.footer__list
-          +footer-item('Как собраться в долгий поход?', '#')
-          +footer-item('Жизненно важные предметы для похода', '#')
-          +footer-item('Медицинская страховка, гарантии безопасности', '#')
-          +footer-item('Если вы врач - загляните сюда', '#')
+          +link-item('Как собраться в долгий поход?', '#')
+          +link-item('Жизненно важные предметы для похода', '#')
+          +link-item('Медицинская страховка, гарантии безопасности', '#')
+          +link-item('Если вы врач - загляните сюда', '#')
   div.footer__bottom
     div.footer__copyright
       p.footer__text

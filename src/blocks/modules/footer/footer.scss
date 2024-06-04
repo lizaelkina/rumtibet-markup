@@ -55,23 +55,6 @@
     gap: 16px;
   }
 
-  &__item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: all .5s ease;
-
-    &:hover .footer__text {
-      color: $accent-secondary;
-      text-decoration: underline 1px solid;
-      text-underline-position: under;
-    }
-
-    &:hover .footer__svg_marker {
-      fill: $accent-secondary;
-    }
-  }
-
   &__bottom {
     background-color: $main;
     padding: 24px 16px;
@@ -100,23 +83,15 @@
   }
 
   &__svg {
+    max-width: 27px;
     width: 100%;
+    aspect-ratio: 1;
     fill: $white;
     cursor: pointer;
     transition: all .5s ease;
 
-    &_marker {
-      max-width: 6px;
-      aspect-ratio: 6 / 10;
-    }
-
-    &_social {
-      max-width: 27px;
-      aspect-ratio: 1;
-
-      &:hover {
-        fill: $accent-secondary;
-      }
+    &:hover {
+      fill: $accent-secondary;
     }
   }
 }

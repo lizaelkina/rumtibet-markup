@@ -30,7 +30,7 @@ mixin overlay-tour(title, subtitle, price, text)
     a.btn.btn_primary.overlay__button(href='#') Программа тура
 
 mixin blog-card(src, title, date, text)
-  div.blog-card&attributes(attributes)
+  li.blog-card&attributes(attributes)
     img(src=src alt=title).blog-card__img
     a.blog-card__info(href='#')
       h4.blog-card__title= title
@@ -39,3 +39,8 @@ mixin blog-card(src, title, date, text)
       div.blog-card__more
         p.blog-card__date= date
         p.blog-card__read Читать статью
+
+mixin link-item(title, href)
+  li.link-item&attributes(attributes)
+    +svg('arrowList').link-item__svg
+    a.link-item__text.link-hover(href=href)= title
