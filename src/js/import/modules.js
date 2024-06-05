@@ -1,4 +1,3 @@
-import '%modules%/about/about';
 import '%modules%/blog/blog';
 import '%modules%/menu/menu';
 import '%modules%/modal/modal';

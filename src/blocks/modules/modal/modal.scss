@@ -20,14 +20,24 @@
 
   &__container {
     position: relative;
-    width: 560px;
-    height: 315px;
-    background-color: #f2be22;
+    width: 70%;
+  }
+
+  &__iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
   }
 
   &__button {
     position: absolute;
     top: -40px;
-    right: -40px;
+    right: -10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .modal__container {
+    width: 90%;
   }
 }

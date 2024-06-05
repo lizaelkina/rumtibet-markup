@@ -1,3 +1,4 @@
+const body = document.querySelector('.root');
 const page = document.querySelector('.page');
 const menu = page.querySelector('.menu');
 const overlay = page.querySelector('.menu__overlay');
@@ -8,12 +9,14 @@ const anchorMenu = menu.querySelectorAll('.menu__link');
 function openMenu() {
   menu.classList.add('menu_opened');
   overlay.classList.add('menu__overlay_opened');
+  body.classList.add('root__modal-open');
   document.addEventListener('keydown', closeMenuByEsc);
 }
 
 function closeMenu() {
   menu.classList.remove('menu_opened');
   overlay.classList.remove('menu__overlay_opened');
+  body.classList.remove('root__modal-open');
   document.addEventListener('keydown', closeMenuByEsc);
 }
 
