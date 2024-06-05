@@ -1,19 +1,19 @@
 const page = document.querySelector('.page');
 const menu = page.querySelector('.menu');
-const overlay = page.querySelector('.overlay');
+const overlay = page.querySelector('.menu__overlay');
 const buttonOpenMenu = page.querySelector('.header__burger');
 const buttonCloseMenu = menu.querySelector('.menu__button');
 const anchorMenu = menu.querySelectorAll('.menu__link');
 
 function openMenu() {
   menu.classList.add('menu_opened');
-  overlay.classList.add('overlay_menu_opened');
+  overlay.classList.add('menu__overlay_opened');
   document.addEventListener('keydown', closeMenuByEsc);
 }
 
 function closeMenu() {
   menu.classList.remove('menu_opened');
-  overlay.classList.remove('overlay_menu_opened');
+  overlay.classList.remove('menu__overlay_opened');
   document.addEventListener('keydown', closeMenuByEsc);
 }
 

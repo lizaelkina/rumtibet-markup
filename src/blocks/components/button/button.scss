@@ -46,4 +46,24 @@
       font-weight: 600;
     }
   }
+
+  &_icon {
+    max-width: 42px;
+    max-height: 42px;
+    padding: 6px;
+    background-color: transparent;
+    fill: $white;
+    transition: transform .3s;
+
+    &:hover,
+    &:focus {
+      fill: $accent-secondary;
+      transform: scale(1.3);
+    }
+
+    &_svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
 }
