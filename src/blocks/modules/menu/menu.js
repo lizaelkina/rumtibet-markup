@@ -7,13 +7,13 @@ const anchorMenu = menu.querySelectorAll('.menu__link');
 
 function openMenu() {
   menu.classList.add('menu_opened');
-  overlay.classList.add('overlay__menu_opened');
+  overlay.classList.add('overlay_menu_opened');
   document.addEventListener('keydown', closeMenuByEsc);
 }
 
 function closeMenu() {
   menu.classList.remove('menu_opened');
-  overlay.classList.remove('overlay__menu_opened');
+  overlay.classList.remove('overlay_menu_opened');
   document.addEventListener('keydown', closeMenuByEsc);
 }
 

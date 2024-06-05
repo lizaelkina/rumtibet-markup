@@ -72,7 +72,7 @@
   opacity: 0;
   transition: visibility .3s, opacity .3s linear;
 
-  &__menu_opened {
+  &_menu_opened {
     visibility: visible;
     opacity: 1;
   }
