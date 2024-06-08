@@ -11,4 +11,14 @@
 .swiper-button-next,
 .swiper-button-prev {
   color: $accent-secondary;
+
+  &_modal {
+    color: $white;
+    transition: transform .3s;
+
+    &:hover {
+      color: $accent-secondary;
+      transform: scale(1.3);
+    }
+  }
 }

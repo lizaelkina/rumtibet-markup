@@ -41,6 +41,7 @@
   &__img {
     background-color: $accent-primary;
     aspect-ratio: 380 / 500;
+    cursor: pointer;
   }
 
   &__rating {

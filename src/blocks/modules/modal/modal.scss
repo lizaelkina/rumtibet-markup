@@ -23,16 +23,25 @@
     width: 70%;
   }
 
+  &__button {
+    position: absolute;
+    top: -40px;
+    right: -10px;
+  }
+
   &__iframe {
     width: 100%;
     aspect-ratio: 16 / 9;
     border: 0;
   }
 
-  &__button {
-    position: absolute;
-    top: -40px;
-    right: -10px;
+  &__swiper {
+    display: block;
+  }
+
+  &__img {
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
   }
 }
 
