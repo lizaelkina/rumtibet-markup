@@ -2,7 +2,8 @@ import {openModal} from '%modules%/modal/modal';
 
 const page = document.querySelector('.page');
 const modalImages = page.querySelector('.modal__images');
-const buttonOpenImagesModal = page.querySelectorAll('.photo__img');
+const buttonOpenImagesModal = page.querySelectorAll('.js-photo');
+const buttonOpenImagesSwiperModal = page.querySelectorAll('.js-photo-swiper');
 
 // eslint-disable-next-line no-unused-vars,no-undef
 const swiper = new Swiper('.modal__swiper',
@@ -26,3 +27,4 @@ function openImagesModal(index) {
 }
 
 buttonOpenImagesModal.forEach((photo, index) => photo.addEventListener('click', () => openImagesModal(index)));
+buttonOpenImagesSwiperModal.forEach((photo, index) => photo.addEventListener('click', () => openImagesModal(index)));
