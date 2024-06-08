@@ -45,6 +45,12 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .modal__img {
+    aspect-ratio: 4 / 3;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .modal__container {
     width: 90%;
