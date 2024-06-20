@@ -134,14 +134,14 @@
 
 @media screen and (max-width: 640px) {
   .search {
-    padding-bottom: 30px;
+    padding: 24px;
     display: flex;
     flex-direction: column;
     gap: 24px;
 
     &__button {
       align-self: center;
-      max-width: 200px;
+      max-width: 240px;
     }
   }
 }
