@@ -1,0 +1,95 @@
+.search {
+  max-width: 1180px;
+  width: 100%;
+  background-color: $blur;
+  backdrop-filter: blur(6px);
+  box-sizing: border-box;
+  padding: 40px 42px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  gap: 24px;
+
+  &__fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__wrap {
+    min-width: 270px;
+    position: relative;
+
+    &_type_select {
+
+      &::after {
+        content: url(../img/svg/arrowDown.svg);
+        position: absolute;
+        top: 18px;
+        right: 16px;
+        pointer-events: none;
+        //transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__item {
+    appearance: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    border: 1px solid $white;
+    border-radius: 8px;
+    background-color: transparent;
+    outline-color: transparent;
+    @include form-selection;
+    cursor: pointer;
+
+    &:focus {
+      border: 1px solid $accent-secondary;
+    }
+  }
+
+  &__label {
+    @include form-selection;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translate(0, -50%);
+    cursor: pointer;
+  }
+
+  &__input-svg {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 18px;
+    right: 16px;
+  }
+
+  &__caption {
+    @include form-label;
+    text-transform: lowercase;
+  }
+
+  &__option {
+    @include form-label;
+    color: $main;
+    background-color: $white;
+  }
+
+  &__button {
+    max-width: 213px;
+    max-height: 54px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .search {
+    display: none;
+  }
+}

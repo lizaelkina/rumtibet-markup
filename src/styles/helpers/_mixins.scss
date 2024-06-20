@@ -72,3 +72,21 @@
   line-height: 18px;
   color: $white;
 }
+
+@mixin form-selection {
+  font-family: $font-card-title;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: $white;
+}
+
+@mixin form-label {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: $white;
+}

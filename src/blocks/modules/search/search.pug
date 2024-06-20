@@ -1,0 +1,42 @@
+form.search(name='search' novalidate)
+  fieldset.search__fieldset
+    div.search__wrap.search__wrap_type_select
+      select#location.search__item(
+        required
+        name='location')
+        option.search__option(selected disabled) Локации для тура
+        option.search__option(value='altai') Алтай
+        option.search__option(value='baikal') Байкал
+        option.search__option(value='kamchatka') Камчатка
+        option.search__option(value='sochi') Сочи
+    div.search__caption Выберете из списка
+
+  fieldset.search__fieldset
+    div.search__wrap
+      label#calendar-label.search__label(for='calendar-input') Дата похода
+      input#calendar-input.search__item.search__item_type_input(
+        required
+        readonly
+        name='calendar'
+        type='text')
+      +svg('date').search__input-svg
+      div#calendar-input-div
+      div#calendar
+    div.search__caption Укажите диапазон
+
+  fieldset.search__fieldset
+    div.search__wrap.search__wrap_type_select
+      select#participants.search__item(
+        required
+        name='participants')
+        option.search__option(selected disabled) Участники
+        option.search__option(value='4') 4
+        option.search__option(value='5') 5
+        option.search__option(value='6') 6
+        option.search__option(value='7') 7
+        option.search__option(value='8') 8
+        option.search__option(value='9') 9
+        option.search__option(value='10') 10
+    div.search__caption Минимум 4 человека
+
+  button.btn.btn_secondary.search__button(type='button') Найти программу
