@@ -6,12 +6,12 @@ header.header
   +logo.header__logo
   nav.header__nav
     ul.header__menu
-      +menu('Главная', '#')
-      +menu('Про гида', '#')
-      +menu('Программа тура', '#')
-      +menu('Стоимость', '#')
-      +menu('Блог', '#')
-      +menu('Контакты', '#')
-    a.btn.btn_primary.header__button(href='#') Консультация
+      +menu('Главная', '/')
+      +menu('Про гида', '#about')
+      +menu('Программа тура', '#popular')
+      +menu('Стоимость', '#offer')
+      +menu('Блог', '#blog')
+      +menu('Контакты', '#footer')
+    a.btn.btn_primary.header__button(href='tel:+71234567890') Консультация
   button.btn.btn_icon.header__burger(type='button' aria-label='Открыть меню' aria-expanded='false')
     +svg('menu').btn_icon_svg
