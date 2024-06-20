@@ -63,6 +63,7 @@
   }
 
   &__input-svg {
+    z-index: -1;
     width: 18px;
     height: 18px;
     position: absolute;
@@ -88,7 +89,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .search {
     display: none;
   }

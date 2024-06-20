@@ -1,0 +1,79 @@
+[data-calendar-theme=light] .vanilla-calendar-month, .vanilla-calendar-year {
+  font-family: $font-card-title;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: $main;
+}
+
+.vanilla-calendar-arrow {
+  color: $main;
+}
+
+[data-calendar-theme=light] .vanilla-calendar-week__day {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: $accent-secondary;
+}
+
+[data-calendar-theme=light] .vanilla-calendar-day {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+}
+
+[data-calendar-theme=light] .vanilla-calendar-day__btn_today {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  color: $accent-primary;
+
+  &:hover {
+    color: $accent-primary;
+  }
+}
+
+[data-calendar-theme=light] .vanilla-calendar-day__btn_selected, [data-calendar-theme=light] .vanilla-calendar-day__btn_selected:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 62 62 / var(--tw-bg-opacity));
+  color: $white;
+}
+
+[data-calendar-theme=light] .vanilla-calendar-day_selected-intermediate .vanilla-calendar-day__btn_selected, [data-calendar-theme=light] .vanilla-calendar-day_selected-intermediate .vanilla-calendar-day__btn_selected:hover {
+  --tw-bg-opacity: .7;
+  background-color: rgb(26 62 62 / var(--tw-bg-opacity));
+  color: $white;
+}
+
+[data-calendar-theme=light] .vanilla-calendar-months__month {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+}
+
+[data-calendar-theme=light] .vanilla-calendar-months__month.vanilla-calendar-months__month_selected, [data-calendar-theme=light] .vanilla-calendar-months__month.vanilla-calendar-months__month_selected:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 62 62 / var(--tw-bg-opacity));
+  color: $white;
+}
+
+[data-calendar-theme=light] .vanilla-calendar-years__year {
+  font-family: $font-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+}
+
+[data-calendar-theme=light] .vanilla-calendar-years__year.vanilla-calendar-years__year_selected, [data-calendar-theme=light] .vanilla-calendar-years__year.vanilla-calendar-years__year_selected:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 62 62 / var(--tw-bg-opacity));
+  color: $white;
+}

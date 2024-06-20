@@ -1,0 +1,1 @@
+import '%components%/vanilla-calendar/vanilla-calendar';
