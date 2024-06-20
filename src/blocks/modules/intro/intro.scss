@@ -27,16 +27,11 @@
     letter-spacing: 1px;
     color: $white;
   }
-
-  &__button {
-    max-width: 213px;
-    display: none;
-  }
 }
 
 @media screen and (max-width: 768px) {
   .intro {
-    padding-top: 298px;
+    padding-top: 200px;
     padding-bottom: 50px;
 
     &__container {
@@ -46,10 +41,6 @@
 
     &__title {
       font-size: 28px;
-    }
-
-    &__button {
-      display: flex;
     }
   }
 }

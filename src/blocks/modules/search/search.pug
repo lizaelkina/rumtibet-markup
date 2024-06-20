@@ -1,5 +1,5 @@
 form.search(name='search' novalidate)
-  fieldset.search__fieldset
+  fieldset.search__fieldset.search__grid_first
     div.search__wrap.search__wrap_type_select
       select#location.search__item(
         required
@@ -11,7 +11,7 @@ form.search(name='search' novalidate)
         option.search__option(value='sochi') Сочи
     div.search__caption Выберете из списка
 
-  fieldset.search__fieldset
+  fieldset.search__fieldset.search__grid_second
     div.search__wrap
       label#calendar-label.search__label(for='calendar-input') Дата похода
       input#calendar-input.search__item.search__item_type_input(
@@ -24,7 +24,7 @@ form.search(name='search' novalidate)
       div#calendar
     div.search__caption Укажите диапазон
 
-  fieldset.search__fieldset
+  fieldset.search__fieldset.search__grid_third
     div.search__wrap.search__wrap_type_select
       select#participants.search__item(
         required
