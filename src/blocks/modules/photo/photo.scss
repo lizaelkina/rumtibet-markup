@@ -3,9 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 10px;
 
   &__title {
+    margin-bottom: 30px;
     text-align: center;
   }
 
@@ -68,7 +69,7 @@
   }
 
   &__button {
-    margin-top: 10px;
+    margin-top: 30px;
     max-width: 178px;
   }
 }
@@ -85,20 +86,23 @@
   .photo__img {
     aspect-ratio: 280 / 250;
   }
+
+  .photo__button {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .photo {
     align-items: start;
-    gap: 32px;
 
     &__title {
+      margin-bottom: 22px;
       align-items: start;
       text-align: start;
     }
 
     &__button {
-      margin-top: 0;
       align-self: center;
     }
   }

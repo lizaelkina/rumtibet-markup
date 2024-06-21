@@ -17,7 +17,7 @@ section#photo.photo
       +img('./img/photo_6.jpg', 'Заметки путешественника')
 
   div.swiper.photo__swiper
-    div.swiper-wrapper
+    div.swiper-wrapper.swiper-wrapper_bottom
       picture.photo__img.js-photo-swiper.swiper-slide
         +img('./img/photo_1.jpg', 'Каппадокия')
       picture.photo__img.js-photo-swiper.swiper-slide
@@ -30,7 +30,6 @@ section#photo.photo
         +img('./img/photo_5.jpg', 'Великий каньон')
       picture.photo__img.js-photo-swiper.swiper-slide
         +img('./img/photo_6.jpg', 'Заметки путешественника')
-    div.swiper-button-prev
-    div.swiper-button-next
+    div.swiper-pagination
 
   a.btn.btn_primary.photo__button(href='#') Наш pinterest

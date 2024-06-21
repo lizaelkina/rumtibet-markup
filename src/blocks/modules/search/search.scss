@@ -40,10 +40,10 @@
       &::after {
         content: url(../img/svg/arrowDown.svg);
         position: absolute;
-        top: 18px;
-        right: 16px;
+        top: 50%;
+        right: 14px;
+        transform: translate(0, -50%);
         pointer-events: none;
-        //transform: rotate(180deg);
       }
     }
   }
@@ -51,8 +51,9 @@
   &__item {
     appearance: none;
     width: 100%;
+    min-height: 52px;
     box-sizing: border-box;
-    padding: 14px 16px;
+    padding: 14px;
     border: 1px solid $white;
     border-radius: 8px;
     background-color: transparent;
@@ -69,7 +70,7 @@
     @include form-selection;
     position: absolute;
     top: 50%;
-    left: 16px;
+    left: 14px;
     transform: translate(0, -50%);
     cursor: pointer;
   }
@@ -80,7 +81,7 @@
     height: 18px;
     position: absolute;
     top: 50%;
-    right: 16px;
+    right: 14px;
     transform: translate(0, -50%);
   }
 
@@ -97,18 +98,29 @@
 
   &__button {
     grid-column: 7 / 9;
-    max-height: 53.6px;
+    max-height: 52px;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1260px) {
+  .search__item {
+    font-family: $font-link;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .search__label {
+    font-family: $font-link;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: normal;
+  }
+}
+
+@media screen and (max-width: 1150px) {
   .search {
     padding: 30px 32px 20px;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  .search {
     grid-template-rows: repeat(2, 1fr);
     row-gap: 24px;
 

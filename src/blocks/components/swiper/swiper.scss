@@ -4,6 +4,13 @@
   height: 100%;
 }
 
+.swiper-wrapper {
+
+  &_bottom {
+    padding-bottom: 35px;
+  }
+}
+
 .swiper-pagination-bullet-active {
   background: $accent-secondary;
 }

@@ -6,10 +6,12 @@
 
   &__subtitle {
     @include section-subtitle;
+    font-size: clamp(16px, 3vh, 24px);
   }
 
   &__title {
     @include section-title;
+    font-size: clamp(24px, 4vh, 32px);
   }
 }
 
