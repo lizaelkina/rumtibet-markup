@@ -1,7 +1,7 @@
 form.search(name='search' novalidate)
   fieldset.search__fieldset.search__grid_first
     div.search__wrap.search__wrap_type_select
-      select#location.search__item(
+      select#location.search__item.form__input(
         required
         name='location')
         option.search__option(selected disabled) Локации для тура
@@ -14,7 +14,7 @@ form.search(name='search' novalidate)
   fieldset.search__fieldset.search__grid_second
     div.search__wrap
       label#calendar-label.search__label(for='calendar-input') Дата похода
-      input#calendar-input.search__item.search__item_type_input(
+      input#calendar-input.search__item.search__item_type_input.form__input(
         required
         readonly
         name='calendar'
@@ -26,7 +26,7 @@ form.search(name='search' novalidate)
 
   fieldset.search__fieldset.search__grid_third
     div.search__wrap.search__wrap_type_select
-      select#participants.search__item(
+      select#participants.search__item.form__input(
         required
         name='participants')
         option.search__option(selected disabled) Участники
@@ -39,4 +39,4 @@ form.search(name='search' novalidate)
         option.search__option(value='10') 10
     div.search__caption Минимум 4 человека
 
-  button.btn.btn_secondary.search__button(type='submit') Найти программу
+  button.btn.btn_secondary.search__button.form__button(type='submit') Найти программу
