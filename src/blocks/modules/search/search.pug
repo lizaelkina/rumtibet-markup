@@ -1,4 +1,4 @@
-form.search(name='search' novalidate)
+form.search.form(name='search' novalidate)
   fieldset.search__fieldset.search__fieldset_first
     div.dropdown
       button.dropdown__button(type='button') Локации для тура
@@ -18,7 +18,7 @@ form.search(name='search' novalidate)
   fieldset.search__fieldset.search__fieldset_second
     div.calendar
       label#calendar-label.calendar__label(for='calendar-input') Дата похода
-      input#calendar-input.calendar__input(name='calendar' type='text' required readonly autocomplete='off')
+      input#calendar-input.calendar__input.form__input(name='calendar' type='text' required readonly autocomplete='off')
       +svg('date').calendar__svg
       div#calendar-input-div
       div#calendar
@@ -36,7 +36,7 @@ form.search(name='search' novalidate)
         li.dropdown__item(data-value = 9) 9
         li.dropdown__item(data-value = 10) 10
         li.dropdown__item(data-value = 11) 11
-        li.dropdown__item(data-value = 10) 12
+        li.dropdown__item(data-value = 12) 12
       input#participants.dropdown__input.form__input(name='participants' type='text' required)
     div.search__caption Минимум 4 человека
 

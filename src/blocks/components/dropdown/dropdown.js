@@ -20,11 +20,17 @@ dropdownList.forEach(function (dropdown) {
 
   button.addEventListener('click', openDropdown);
 
+  input.addEventListener('clearInput', () => {
+    button.innerText = '';
+  });
+
   items.forEach(function (item) {
     item.addEventListener('click', function (event) {
       event.stopPropagation();
+      button.focus();
       button.innerText = this.innerText;
       input.value = this.dataset.value;
+      input.dispatchEvent(new Event('change'));
       closeDropdown();
     });
   });

@@ -1,14 +1,19 @@
-const form = document.querySelector('.form');
-const formButton = document.querySelector('.form__button');
-
 function showInputError(inputElement, errorElement) {
-  inputElement.classList.add('form__input_type_error');
-  errorElement.classList.add('form__error_active');
+  if (inputElement) {
+    inputElement.classList.add('form__input_type_error');
+  }
+  if (errorElement) {
+    errorElement.classList.add('form__error_active');
+  }
 }
 
 function hideInputError(inputElement, errorElement) {
-  inputElement.classList.remove('form__input_type_error');
-  errorElement.classList.remove('form__error_active');
+  if (inputElement) {
+    inputElement.classList.remove('form__input_type_error');
+  }
+  if (errorElement) {
+    errorElement.classList.remove('form__error_active');
+  }
 }
 
 function toggleButtonState(buttonElement, isActive) {
@@ -33,10 +38,16 @@ function checkInputValidity(formElement, inputElement) {
 function setEventListeners(formElement) {
   const inputList = Array.from(formElement.querySelectorAll('.form__input'));
   const buttonElement = formElement.querySelector('.form__button');
+
   toggleButtonState(buttonElement, false);
 
   inputList.forEach((inputElement) => {
     inputElement.addEventListener('input', () => {
+      checkInputValidity(formElement, inputElement);
+      toggleButtonState(buttonElement, formElement.checkValidity());
+    });
+
+    inputElement.addEventListener('change', () => {
       checkInputValidity(formElement, inputElement);
       toggleButtonState(buttonElement, formElement.checkValidity());
     });
@@ -50,10 +61,18 @@ function enableValidation() {
 
 enableValidation();
 
-function sendMessage(event) {
-  event.preventDefault();
-  form.reset();
-  formButton.disabled = 'disabled';
+function addSubmitListeners() {
+  const formList = Array.from(document.querySelectorAll('.form'));
+  formList.forEach((formElement) => {
+    formElement.addEventListener('submit', (event) => {
+      event.preventDefault();
+      formElement.reset();
+      formElement.querySelector('.form__button').disabled = 'disabled';
+      Array.from(formElement.querySelectorAll('.form__input')).forEach(input => {
+        input.dispatchEvent(new Event('clearInput'));
+      });
+    });
+  });
 }
 
-form.addEventListener('submit', sendMessage);
+addSubmitListeners();
