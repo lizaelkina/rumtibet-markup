@@ -6,6 +6,7 @@
 
 - Одностраничный, адаптивный сайт на Flexbox и Grid Layout.
 - Библиотека "Swiper" для слайдеров.
+- Библиотека "VanillaCalendar" для выбора даты в инпуте.
 - Валидация форм на JavaScript.
 
 ## Используемые технологии
@@ -17,4 +18,4 @@
 
 ## Ссылка на проект
 
-[//]: # (- https://lizaelkina.github.io/rumtibet-markup/)
+- https://lizaelkina.github.io/rumtibet-markup/
