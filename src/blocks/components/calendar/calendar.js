@@ -1,7 +1,4 @@
 const calendarLabel = document.querySelector('#calendar-label');
-
-
-
 function prettyDate(text) {
   const date = new Date(text);
   const newDate = date.toLocaleDateString('ru-RU', {
@@ -50,5 +47,3 @@ const options = {
 const calendarInput = new VanillaCalendar('#calendar-input', options);
 
 calendarInput.init();
-
-document.querySelector('#calendar-input').style.display = 'flex';
