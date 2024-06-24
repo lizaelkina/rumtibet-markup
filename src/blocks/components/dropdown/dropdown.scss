@@ -15,7 +15,7 @@
     text-align: left;
     cursor: pointer;
 
-    &:focus {
+    &:focus, &:active {
       border: 1px solid $accent-secondary;
     }
 
