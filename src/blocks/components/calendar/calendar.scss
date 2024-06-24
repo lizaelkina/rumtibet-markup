@@ -1,3 +1,59 @@
+.calendar {
+  position: relative;
+
+  &__label {
+    @include form-selection;
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  &__input {
+    width: 100%;
+    min-height: 54px;
+    box-sizing: border-box;
+    padding: 14px 30px 14px 14px;
+    border: 1px solid $white;
+    border-radius: 8px;
+    background-color: transparent;
+    outline: none;
+    @include form-selection;
+    cursor: pointer;
+
+    &:focus {
+      border: 1px solid $accent-secondary;
+    }
+  }
+
+  &__svg {
+    z-index: -1;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translate(0, -50%);
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .calendar__label {
+    font-family: $font-link;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  .calendar__input {
+    font-family: $font-link;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: normal;
+  }
+}
+
 [data-calendar-theme=light] .vanilla-calendar-month, .vanilla-calendar-year {
   font-family: $font-card-title;
   font-style: normal;
@@ -7,7 +63,7 @@
   color: $main;
 }
 
-.vanilla-calendar-arrow {
+[data-calendar-theme=light] .vanilla-calendar-arrow {
   color: $main;
 }
 

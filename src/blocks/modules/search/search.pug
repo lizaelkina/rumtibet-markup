@@ -1,42 +1,43 @@
 form.search(name='search' novalidate)
-  fieldset.search__fieldset.search__grid_first
-    div.search__wrap.search__wrap_type_select
-      select#location.search__item.form__input(
-        required
-        name='location')
-        option.search__option(selected disabled) Локации для тура
-        option.search__option(value='altai') Алтай
-        option.search__option(value='baikal') Байкал
-        option.search__option(value='kamchatka') Камчатка
-        option.search__option(value='sochi') Сочи
+  fieldset.search__fieldset.search__fieldset_first
+    div.dropdown
+      button.dropdown__button(type='button') Локации для тура
+      ul.dropdown__list.dropdown__scroll
+        li.dropdown__item(data-value = 'altai') Алтай
+        li.dropdown__item(data-value = 'baikal') Байкал
+        li.dropdown__item(data-value = 'dagestan') Дагестан
+        li.dropdown__item(data-value = 'dombaу') Домбай
+        li.dropdown__item(data-value = 'kamchatka') Камчатка
+        li.dropdown__item(data-value = 'karelia') Карелия
+        li.dropdown__item(data-value = 'sakhalin') Сахалин
+        li.dropdown__item(data-value = 'sochi') Сочи
+        li.dropdown__item(data-value = 'elbrus') Эльбрус
+      input#location.dropdown__input.form__input(name='location' type='text' required)
     div.search__caption Выберете из списка
 
-  fieldset.search__fieldset.search__grid_second
-    div.search__wrap
-      label#calendar-label.search__label(for='calendar-input') Дата похода
-      input#calendar-input.search__item.search__item_type_input.form__input(
-        required
-        readonly
-        name='calendar'
-        type='text')
-      +svg('date').search__input-svg
+  fieldset.search__fieldset.search__fieldset_second
+    div.calendar
+      label#calendar-label.calendar__label(for='calendar-input') Дата похода
+      input#calendar-input.calendar__input(name='calendar' type='text' required readonly autocomplete='off')
+      +svg('date').calendar__svg
       div#calendar-input-div
       div#calendar
     div.search__caption Укажите диапазон
 
-  fieldset.search__fieldset.search__grid_third
-    div.search__wrap.search__wrap_type_select
-      select#participants.search__item.form__input(
-        required
-        name='participants')
-        option.search__option(selected disabled) Участники
-        option.search__option(value='4') 4
-        option.search__option(value='5') 5
-        option.search__option(value='6') 6
-        option.search__option(value='7') 7
-        option.search__option(value='8') 8
-        option.search__option(value='9') 9
-        option.search__option(value='10') 10
+  fieldset.search__fieldset.search__fieldset_third
+    div.dropdown
+      button.dropdown__button(type='button') Участники
+      ul.dropdown__list.dropdown__scroll
+        li.dropdown__item(data-value = 4) 4
+        li.dropdown__item(data-value = 5) 5
+        li.dropdown__item(data-value = 6) 6
+        li.dropdown__item(data-value = 7) 7
+        li.dropdown__item(data-value = 8) 8
+        li.dropdown__item(data-value = 9) 9
+        li.dropdown__item(data-value = 10) 10
+        li.dropdown__item(data-value = 11) 11
+        li.dropdown__item(data-value = 10) 12
+      input#participants.dropdown__input.form__input(name='participants' type='text' required)
     div.search__caption Минимум 4 человека
 
   button.btn.btn_secondary.search__button.form__button(type='submit') Найти программу

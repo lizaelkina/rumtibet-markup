@@ -1,3 +1,7 @@
+const calendarLabel = document.querySelector('#calendar-label');
+
+
+
 function prettyDate(text) {
   const date = new Date(text);
   const newDate = date.toLocaleDateString('ru-RU', {
@@ -17,11 +21,11 @@ const options = {
         self.HTMLInputElement.value =
           prettyDate(self.selectedDates[0]) + ' - ' +
           prettyDate(self.selectedDates[self.selectedDates.length - 1]);
-        document.querySelector('#calendar-label').style.display = 'none';
+        calendarLabel.style.display = 'none';
         self.hide();
       } else {
         self.HTMLInputElement.value = '';
-        document.querySelector('#calendar-label').style.display = 'block';
+        calendarLabel.style.display = 'block';
       }
     },
   },
