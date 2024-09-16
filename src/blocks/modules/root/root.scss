@@ -1,9 +1,11 @@
 .root::-webkit-scrollbar {
   width: 5px;
 }
+
 .root::-webkit-scrollbar-track {
   background: $overlay-scroll;
 }
+
 .root::-webkit-scrollbar-thumb {
   background: $accent-secondary;
   border: 3px solid $accent-secondary;
