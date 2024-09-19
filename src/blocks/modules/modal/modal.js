@@ -10,10 +10,10 @@ export function openModal(modal) {
 export function closeModal(modal) {
   modal.classList.remove('modal_opened');
   body.classList.remove('root__modal-open');
-  document.addEventListener('keydown', closeModalByEsc);
+  document.removeEventListener('keydown', closeModalByEsc);
 }
 
-function closeModalByEsc(event) {
+export function closeModalByEsc(event) {
   if (event.key === 'Escape') {
     const openedModal = page.querySelector('.modal_opened');
     closeModal(openedModal);

@@ -1,4 +1,4 @@
-import {openModal} from '%modules%/modal/modal';
+import {openModal, closeModal} from '%modules%/modal/modal';
 
 const page = document.querySelector('.page');
 const modalVideo = page.querySelector('.modal__video');
@@ -21,11 +21,17 @@ function openVideoModal() {
 
 function closeVideoModal() {
   modalContent.innerHTML = '';
+  closeModal(modalVideo);
 }
-
 buttonOpenVideoModal.addEventListener('click', openVideoModal);
 
 buttonCloseVideoModal.addEventListener('click', closeVideoModal);
+
+modalVideo.addEventListener('mousedown', (event) => {
+  if (event.target === modalVideo) {
+    closeVideoModal();
+  }
+});
 
 // YOUTUBE
 // '<iframe ' +
