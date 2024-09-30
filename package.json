@@ -1,13 +1,13 @@
 {
-  "name": "gulp-start",
+  "name": "rumtibet-markup",
   "author": "Liza Elkina",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lizaelkina/gulp-start.git"
+    "url": "git+https://github.com/lizaelkina/rumtibet-markup.git"
   },
-  "homepage": "https://github.com/lizaelkina/gulp-start#readme",
+  "homepage": "https://github.com/lizaelkina/rumtibet-markup#readme",
   "bugs": {
-    "url": "https://github.com/lizaelkina/gulp-start/issues"
+    "url": "https://github.com/lizaelkina/rumtibet-markup/issues"
   },
   "license": "GPL-3.0-only",
   "scripts": {
