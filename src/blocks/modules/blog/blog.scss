@@ -1,13 +1,12 @@
 .blog {
   background-color: $background;
-  padding: 80px 0 100px;
 
   &__container {
-    @include section-on-page;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 40px;
   }
 
@@ -17,8 +16,6 @@
 
   &__list {
     @include list-style-none;
-    max-width: 1180px;
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -27,30 +24,31 @@
   &__button {
     margin-top: 10px;
     max-width: 220px;
+    align-self: center;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .blog {
-    padding: 50px 0 50px;
+  .blog__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-    &__list {
-      display: none;
-    }
+  .blog__list {
+    display: none;
+  }
 
-    &__swiper {
-      display: block;
-    }
+  .blog__swiper {
+    display: block;
+  }
 
-    &__wrap {
-      @include list-style-none;
-    }
+  .blog__wrap {
+    @include list-style-none;
   }
 }
 
 @media screen and (max-width: 768px) {
   .blog__container {
-    align-items: start;
     gap: 32px;
   }
 
@@ -61,6 +59,5 @@
 
   .blog__button {
     margin-top: 0;
-    align-self: center;
   }
 }

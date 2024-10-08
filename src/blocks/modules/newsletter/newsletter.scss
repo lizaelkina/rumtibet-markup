@@ -1,14 +1,8 @@
 .newsletter {
-
-  &__wrap {
-    margin: 0 auto;
-    padding: 0 16px;
-    max-width: 1180px;
-  }
+  width: 100%;
 
   &__container {
     background-color: $white;
-    margin-bottom: -98px;
     box-sizing: border-box;
     padding: 40px 100px;
     border-radius: 6px;
@@ -135,7 +129,6 @@
   .newsletter {
 
     &__container {
-      margin-bottom: -139px;
       display: flex;
       flex-direction: column;
       gap: 18px;
@@ -151,7 +144,6 @@
   .newsletter {
 
     &__container {
-      margin-bottom: 50px;
       padding: 24px;
     }
 
@@ -177,11 +169,8 @@
 }
 
 @media screen and (max-width: 380px) {
-  .newsletter {
-
-    &__error {
-      top: -20px;
-      left: 0;
-    }
+  .newsletter__error {
+    top: -20px;
+    left: 0;
   }
 }

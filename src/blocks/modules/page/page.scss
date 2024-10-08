@@ -1,6 +1,32 @@
 .page {
-  max-width: 1920px;
   min-width: 320px;
-  margin: 0 auto;
   font-family: $font-primary;
+
+  &__container {
+    max-width: 1212px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &_type_header {
+      margin-bottom: -104px;
+    }
+
+    &_type_newsletter {
+      margin-bottom: -98px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .page__container_type_newsletter {
+    margin-bottom: -139px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page__container_type_newsletter {
+    margin-bottom: 50px;
+  }
 }

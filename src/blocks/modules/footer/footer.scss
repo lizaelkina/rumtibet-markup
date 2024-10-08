@@ -109,12 +109,12 @@
 
   .footer__column_list_left {
     grid-row-start: 2;
-    grid-column: 2 / 4;
+    grid-column: 1 / 4;
   }
 
   .footer__column_list_right {
     grid-row-start: 2;
-    grid-column: 5 / 7;
+    grid-column: 5 / 8;
   }
 
   .footer__contacts {
@@ -130,14 +130,6 @@
   .footer__top {
     padding-top: 50px;
     padding-bottom: 80px;
-  }
-
-  .footer__column_list_left {
-    grid-column: 1 / 4;
-  }
-
-  .footer__column_list_right {
-    grid-column: 5 / 8;
   }
 
   .footer__bottom {

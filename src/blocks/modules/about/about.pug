@@ -1,9 +1,10 @@
-section#about.about
+section#about.about.page__container
   div.about__images
-    +picture('./img/about/about_1', 'Горы').about__img.about__img_desktop
+    div.about__img-desktop
+      +picture('./img/about/about_1', 'Горы').about__img
     div.about__video
-      button.about__play(type='button' aria-label='Посмотреть видео')
       +picture('./img/about/about_2', 'Домик в горах').about__img
+      button.about__play(type='button' aria-label='Посмотреть видео')
   div.about__info
     +section-title(
       'О нашем походе',

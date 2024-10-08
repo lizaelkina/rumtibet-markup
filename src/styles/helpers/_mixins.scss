@@ -12,11 +12,6 @@
   transform: translate(-50%, -50%);
 }
 
-//section-wrap
-@mixin section-on-page {
-  margin: 0 16px;
-}
-
 //fonts
 @mixin section-title {
   font-family: $font-section-title;

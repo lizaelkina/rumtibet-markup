@@ -1,6 +1,4 @@
 .intro {
-  padding-top: 551px;
-  padding-bottom: 82px;
   background-color: $accent-primary;
   background-image: url('../img/intro/banner' + '.jpg');
   background-image: image-set(url('../img/intro/banner' + '.webp') type('image/webp'));
@@ -9,39 +7,29 @@
   background-size: cover;
 
   &__container {
-    @include section-on-page;
+    width: 100%;
+    padding-top: 551px;
+    padding-bottom: 82px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 41px;
   }
 
   &__title {
-    max-width: 1180px;
-    width: 100%;
     font-family: $font-banner;
     font-style: normal;
     font-weight: 800;
-    font-size: clamp(28px, 6vh, 50px);
+    font-size: clamp(22px, 6vw, 50px);
     line-height: 150%;
     letter-spacing: 1px;
     color: $white;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .intro {
-    padding-top: 200px;
+@media screen and (max-width: 640px) {
+  .intro__container {
+    padding-top: 235px;
     padding-bottom: 50px;
-
-    &__container {
-      align-items: start;
-      gap: 32px;
-    }
-
-    &__title {
-      font-size: clamp(22px, 7vw, 28px);
-    }
+    gap: 32px;
   }
 }

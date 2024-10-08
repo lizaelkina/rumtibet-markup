@@ -1,22 +1,21 @@
-section#newsletter.newsletter
-  div.newsletter__wrap
-    div.newsletter__container
-      div.newsletter__title-wrap
-        h3.newsletter__subtitle Актуально
-        h2.newsletter__title Получайте полезные рассылки о путешествиях
-        h2.newsletter__title_mobile Полезные рассылки
-      form.form.newsletter__form(name='newsletter' novalidate)
-        label.form__label.newsletter__label(for='email-input') Введите e-mail адрес
-        span.form__error.email-input-error.newsletter__error (name@domain.ru)
-        input#email-input.newsletter__input.form__input(
-          required
-          type='email'
-          name='email'
-          autocomplete='off'
-          placeholder='name@domain.ru')
-        button.btn.btn_primary.newsletter__button.form__button(type='submit') Подписаться на новости
-        p.newsletter__caption
-          | Подписываясь на новости, вы автоматически соглашаетесь с
-          | #[a.newsletter__link.link-hover(href='./files/privacy-policy.pdf' target='_blank') условиями обработки персональных данных]
-          | и
-          | #[a.newsletter__link.link-hover(href='./files/rules-of-advertising-mailings.pdf' target='_blank') правилами рекламных рассылок]
+section#newsletter.newsletter.page__container.page__container_type_newsletter
+  div.newsletter__container
+    div.newsletter__title-wrap
+      h3.newsletter__subtitle Актуально
+      h2.newsletter__title Получайте полезные рассылки о путешествиях
+      h2.newsletter__title_mobile Полезные рассылки
+    form.form.newsletter__form(name='newsletter' novalidate)
+      label.form__label.newsletter__label(for='email-input') Введите e-mail адрес
+      span.form__error.email-input-error.newsletter__error (name@domain.ru)
+      input#email-input.newsletter__input.form__input(
+        required
+        type='email'
+        name='email'
+        autocomplete='off'
+        placeholder='name@domain.ru')
+      button.btn.btn_primary.newsletter__button.form__button(type='submit') Подписаться на новости
+      p.newsletter__caption
+        | Подписываясь на новости, вы автоматически соглашаетесь с
+        | #[a.newsletter__link.link-hover(href='./files/privacy-policy.pdf' target='_blank') условиями обработки персональных данных]
+        | и
+        | #[a.newsletter__link.link-hover(href='./files/rules-of-advertising-mailings.pdf' target='_blank') правилами рекламных рассылок]
