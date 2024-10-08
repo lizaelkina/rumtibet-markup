@@ -11,6 +11,7 @@
   }
 
   &__grid {
+    @include list-style-none;
     max-width: 1180px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -71,6 +72,14 @@
   &__button {
     margin-top: 30px;
     max-width: 178px;
+  }
+
+  &__swiper-wrapper {
+    @include list-style-none;
+
+    &_bottom {
+      padding-bottom: 35px;
+    }
   }
 }
 
