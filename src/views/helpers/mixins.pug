@@ -9,6 +9,11 @@ mixin svg(name)
 mixin img(src, alt)
   img(src=src alt=alt loading='lazy')&attributes(attributes)
 
+mixin picture(src, alt)
+  picture
+    source(srcset=src + '.webp' type='image/webp')
+    img(src=src + '.jpg' alt=alt loading='lazy')&attributes(attributes)
+
 mixin section-title(subtitle, title)
   div.section-title&attributes(attributes)
     h3.section-title__subtitle= subtitle
@@ -31,7 +36,7 @@ mixin program-tour(title, subtitle, price, text)
 
 mixin blog-card(src, title, date, text)
   li.blog-card&attributes(attributes)
-    img(src=src alt=title).blog-card__img
+    +picture(src, title).blog-card__img
     a.blog-card__info(href='#')
       h4.blog-card__title= title
       div.blog-card__wrap
