@@ -31,7 +31,7 @@
   </head>
   <body class="root">
     <div class="page">
-      <header class="header"><a href="./"><img class="logo header__logo" src="./img/logo/logo.svg" alt="Логотип"/></a>
+      <header class="header page__container page__container_type_header"><a href="./"><img class="logo header__logo" src="./img/logo/logo.svg" alt="Логотип"/></a>
         <nav class="header__nav">
           <ul class="header__menu">
                   <li><a class="header__link link-hover" href="./">Главная</a></li>
@@ -50,8 +50,8 @@
       </header>
       <main class="content">
         <section class="intro" id="intro">
-          <div class="intro__container">
-            <h1 class="intro__title">Насладись прогулкой в горах с&nbsp;командой единомышленников</h1>
+          <div class="intro__container page__container">
+            <h1 class="intro__title">Насладись прогулкой в&nbsp;горах с&nbsp;командой единомышленников</h1>
             <form class="search form" name="search" novalidate>
               <fieldset class="search__fieldset search__fieldset_first">
                 <div class="dropdown">
@@ -105,10 +105,18 @@
             </form>
           </div>
         </section>
-        <section class="about" id="about">
-          <div class="about__images"><img class="about__img about__img_desktop" src="./img/about_1.jpg" alt="Горы" loading="lazy"/>
+        <section class="about page__container" id="about">
+          <div class="about__images">
+            <div class="about__img-desktop">
+              <picture>
+                <source srcset="./img/about/about_1.webp" type="image/webp"/><img class="about__img" src="./img/about/about_1.jpg" alt="Горы" loading="lazy"/>
+              </picture>
+            </div>
             <div class="about__video">
-              <button class="about__play" type="button" aria-label="Посмотреть видео"></button><img class="about__img" src="./img/about_2.jpg" alt="Домик в горах" loading="lazy"/>
+              <picture>
+                <source srcset="./img/about/about_2.webp" type="image/webp"/><img class="about__img" src="./img/about/about_2.jpg" alt="Домик в горах" loading="lazy"/>
+              </picture>
+              <button class="about__play" type="button" aria-label="Посмотреть видео"></button>
             </div>
           </div>
           <div class="about__info">
@@ -125,7 +133,7 @@
           </div>
         </section>
         <section class="offer" id="offer">
-          <div class="offer__container">
+          <div class="offer__container page__container">
             <div class="offer__info">
               <div class="section-title offer__title">
                 <h3 class="section-title__subtitle">Наше предложение</h3>
@@ -160,18 +168,33 @@
                         </li>
               </ul><a class="btn btn_primary offer__button" href="#">Стоимость программ</a>
             </div>
-            <div class="offer__images"><img class="offer__img offer__img_border_top-right" src="./img/offer_1.jpg" alt="Фото наших путешествий" loading="lazy"/><img class="offer__img offer__img_border_top-left" src="./img/offer_2.jpg" alt="Фото наших путешествий" loading="lazy"/><img class="offer__img offer__img_border_top-left" src="./img/offer_3.jpg" alt="Фото наших путешествий" loading="lazy"/><img class="offer__img offer__img_border_top-right" src="./img/offer_4.jpg" alt="Фото наших путешествий" loading="lazy"/>
+            <div class="offer__images">
+              <picture>
+                <source srcset="./img/offer/offer_1.webp" type="image/webp"/><img class="offer__img offer__img_border_top-right" src="./img/offer/offer_1.jpg" alt="Фото наших путешествий" loading="lazy"/>
+              </picture>
+              <picture>
+                <source srcset="./img/offer/offer_2.webp" type="image/webp"/><img class="offer__img offer__img_border_top-left" src="./img/offer/offer_2.jpg" alt="Фото наших путешествий" loading="lazy"/>
+              </picture>
+              <picture>
+                <source srcset="./img/offer/offer_3.webp" type="image/webp"/><img class="offer__img offer__img_border_top-left" src="./img/offer/offer_3.jpg" alt="Фото наших путешествий" loading="lazy"/>
+              </picture>
+              <picture>
+                <source srcset="./img/offer/offer_4.webp" type="image/webp"/><img class="offer__img offer__img_border_top-right" src="./img/offer/offer_4.jpg" alt="Фото наших путешествий" loading="lazy"/>
+              </picture>
             </div>
           </div>
         </section>
-        <section class="popular" id="popular">
+        <section class="popular page__container" id="popular">
           <div class="section-title popular__title">
             <h3 class="section-title__subtitle">По версии отдыхающих</h3>
             <h2 class="section-title__title">Популярные направления</h2>
           </div>
           <div class="swiper popular__swiper">
             <div class="swiper-wrapper">
-              <div class="popular__tour swiper-slide"><img class="popular__img" src="./img/popular_1.jpg" alt="Озеро возле гор" loading="lazy"/>
+              <div class="popular__tour swiper-slide">
+                <picture>
+                  <source srcset="./img/popular/popular_1.webp" type="image/webp"/><img class="popular__img" src="./img/popular/popular_1.jpg" alt="Озеро возле гор" loading="lazy"/>
+                </picture>
                 <div class="rating popular__rating">
                   <svg class="rating__svg" data-svg="star">
                     <use xlink:href="./img/sprites/sprite.svg#star"></use>
@@ -189,7 +212,10 @@
                   </div><a class="btn btn_primary program__button" href="#">Программа тура</a>
                 </article>
               </div>
-              <div class="popular__tour swiper-slide"><img class="popular__img" src="./img/popular_2.jpg" alt="Ночь в горах" loading="lazy"/>
+              <div class="popular__tour swiper-slide">
+                <picture>
+                  <source srcset="./img/popular/popular_2.webp" type="image/webp"/><img class="popular__img" src="./img/popular/popular_2.jpg" alt="Ночь в горах" loading="lazy"/>
+                </picture>
                 <div class="rating popular__rating">
                   <svg class="rating__svg" data-svg="star">
                     <use xlink:href="./img/sprites/sprite.svg#star"></use>
@@ -207,7 +233,10 @@
                   </div><a class="btn btn_primary program__button" href="#">Программа тура</a>
                 </article>
               </div>
-              <div class="popular__tour swiper-slide"><img class="popular__img" src="./img/popular_3.jpg" alt="Йога в горах" loading="lazy"/>
+              <div class="popular__tour swiper-slide">
+                <picture>
+                  <source srcset="./img/popular/popular_3.webp" type="image/webp"/><img class="popular__img" src="./img/popular/popular_3.jpg" alt="Йога в горах" loading="lazy"/>
+                </picture>
                 <div class="rating popular__rating">
                   <svg class="rating__svg" data-svg="star">
                     <use xlink:href="./img/sprites/sprite.svg#star"></use>
@@ -231,13 +260,16 @@
           </div><a class="btn btn_primary popular__button" href="#">Рейтинг направлений</a>
         </section>
         <section class="blog" id="blog">
-          <div class="blog__container">
+          <div class="blog__container page__container">
             <div class="section-title blog__title">
               <h3 class="section-title__subtitle">Делимся впечатлениями</h3>
               <h2 class="section-title__title">Блог о путешествиях</h2>
             </div>
             <ul class="blog__list">
-              <li class="blog-card"><img class="blog-card__img" src="./img/blog_1.jpg" alt="Красивая Италия, какая она в реальности?"/><a class="blog-card__info" href="#">
+              <li class="blog-card">
+                <picture>
+                  <source srcset="./img/blog/blog_1.webp" type="image/webp"/><img class="blog-card__img" src="./img/blog/blog_1.jpg" alt="Красивая Италия, какая она в реальности?" loading="lazy"/>
+                </picture><a class="blog-card__info" href="#">
                   <h4 class="blog-card__title">Красивая Италия, какая она в реальности?</h4>
                   <div class="blog-card__wrap">
                     <p class="blog-card__text">Для современного мира базовый вектор развития предполагает.</p>
@@ -245,8 +277,12 @@
                   <div class="blog-card__more">
                     <p class="blog-card__date">02/04/2023</p>
                     <p class="blog-card__read">Читать статью</p>
-                  </div></a></li>
-              <li class="blog-card"><img class="blog-card__img" src="./img/blog_2.jpg" alt="Долой сомнения! Весь мир открыт для вас!"/><a class="blog-card__info" href="#">
+                  </div></a>
+              </li>
+              <li class="blog-card">
+                <picture>
+                  <source srcset="./img/blog/blog_2.webp" type="image/webp"/><img class="blog-card__img" src="./img/blog/blog_2.jpg" alt="Долой сомнения! Весь мир открыт для вас!" loading="lazy"/>
+                </picture><a class="blog-card__info" href="#">
                   <h4 class="blog-card__title">Долой сомнения! Весь мир открыт для вас!</h4>
                   <div class="blog-card__wrap">
                     <p class="blog-card__text">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации. Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации. Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации. Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
@@ -254,8 +290,12 @@
                   <div class="blog-card__more">
                     <p class="blog-card__date">02/04/2023</p>
                     <p class="blog-card__read">Читать статью</p>
-                  </div></a></li>
-              <li class="blog-card"><img class="blog-card__img" src="./img/blog_3.jpg" alt="Как подготовиться к путешествию в одиночку?"/><a class="blog-card__info" href="#">
+                  </div></a>
+              </li>
+              <li class="blog-card">
+                <picture>
+                  <source srcset="./img/blog/blog_3.webp" type="image/webp"/><img class="blog-card__img" src="./img/blog/blog_3.jpg" alt="Как подготовиться к путешествию в одиночку?" loading="lazy"/>
+                </picture><a class="blog-card__info" href="#">
                   <h4 class="blog-card__title">Как подготовиться к путешествию в одиночку?</h4>
                   <div class="blog-card__wrap">
                     <p class="blog-card__text">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации. </p>
@@ -263,8 +303,12 @@
                   <div class="blog-card__more">
                     <p class="blog-card__date">01/04/2023</p>
                     <p class="blog-card__read">Читать статью</p>
-                  </div></a></li>
-              <li class="blog-card"><img class="blog-card__img" src="./img/blog_4.jpg" alt="Индия ... летим?"/><a class="blog-card__info" href="#">
+                  </div></a>
+              </li>
+              <li class="blog-card">
+                <picture>
+                  <source srcset="./img/blog/blog_4.webp" type="image/webp"/><img class="blog-card__img" src="./img/blog/blog_4.jpg" alt="Индия ... летим?" loading="lazy"/>
+                </picture><a class="blog-card__info" href="#">
                   <h4 class="blog-card__title">Индия ... летим?</h4>
                   <div class="blog-card__wrap">
                     <p class="blog-card__text">Для современного мира базовый.</p>
@@ -272,11 +316,15 @@
                   <div class="blog-card__more">
                     <p class="blog-card__date">01/04/2023</p>
                     <p class="blog-card__read">Читать статью</p>
-                  </div></a></li>
+                  </div></a>
+              </li>
             </ul>
             <div class="swiper blog__swiper">
               <ul class="swiper-wrapper blog__wrap">
-                <li class="blog-card swiper-slide"><img class="blog-card__img" src="./img/blog_1.jpg" alt="Красивая Италия, какая она в реальности?"/><a class="blog-card__info" href="#">
+                <li class="blog-card swiper-slide">
+                  <picture>
+                    <source srcset="./img/blog/blog_1.webp" type="image/webp"/><img class="blog-card__img" src="./img/blog/blog_1.jpg" alt="Красивая Италия, какая она в реальности?" loading="lazy"/>
+                  </picture><a class="blog-card__info" href="#">
                     <h4 class="blog-card__title">Красивая Италия, какая она в реальности?</h4>
                     <div class="blog-card__wrap">
                       <p class="blog-card__text">Для современного мира базовый вектор развития предполагает.</p>
@@ -284,8 +332,12 @@
                     <div class="blog-card__more">
                       <p class="blog-card__date">02/04/2023</p>
                       <p class="blog-card__read">Читать статью</p>
-                    </div></a></li>
-                <li class="blog-card swiper-slide"><img class="blog-card__img" src="./img/blog_2.jpg" alt="Долой сомнения! Весь мир открыт для вас!"/><a class="blog-card__info" href="#">
+                    </div></a>
+                </li>
+                <li class="blog-card swiper-slide">
+                  <picture>
+                    <source srcset="./img/blog/blog_2.webp" type="image/webp"/><img class="blog-card__img" src="./img/blog/blog_2.jpg" alt="Долой сомнения! Весь мир открыт для вас!" loading="lazy"/>
+                  </picture><a class="blog-card__info" href="#">
                     <h4 class="blog-card__title">Долой сомнения! Весь мир открыт для вас!</h4>
                     <div class="blog-card__wrap">
                       <p class="blog-card__text">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации. Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации. Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации. Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
@@ -293,8 +345,12 @@
                     <div class="blog-card__more">
                       <p class="blog-card__date">02/04/2023</p>
                       <p class="blog-card__read">Читать статью</p>
-                    </div></a></li>
-                <li class="blog-card swiper-slide"><img class="blog-card__img" src="./img/blog_3.jpg" alt="Как подготовиться к путешествию в одиночку?"/><a class="blog-card__info" href="#">
+                    </div></a>
+                </li>
+                <li class="blog-card swiper-slide">
+                  <picture>
+                    <source srcset="./img/blog/blog_3.webp" type="image/webp"/><img class="blog-card__img" src="./img/blog/blog_3.jpg" alt="Как подготовиться к путешествию в одиночку?" loading="lazy"/>
+                  </picture><a class="blog-card__info" href="#">
                     <h4 class="blog-card__title">Как подготовиться к путешествию в одиночку?</h4>
                     <div class="blog-card__wrap">
                       <p class="blog-card__text">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации. </p>
@@ -302,8 +358,12 @@
                     <div class="blog-card__more">
                       <p class="blog-card__date">01/04/2023</p>
                       <p class="blog-card__read">Читать статью</p>
-                    </div></a></li>
-                <li class="blog-card swiper-slide"><img class="blog-card__img" src="./img/blog_4.jpg" alt="Индия ... летим?"/><a class="blog-card__info" href="#">
+                    </div></a>
+                </li>
+                <li class="blog-card swiper-slide">
+                  <picture>
+                    <source srcset="./img/blog/blog_4.webp" type="image/webp"/><img class="blog-card__img" src="./img/blog/blog_4.jpg" alt="Индия ... летим?" loading="lazy"/>
+                  </picture><a class="blog-card__info" href="#">
                     <h4 class="blog-card__title">Индия ... летим?</h4>
                     <div class="blog-card__wrap">
                       <p class="blog-card__text">Для современного мира базовый.</p>
@@ -311,70 +371,105 @@
                     <div class="blog-card__more">
                       <p class="blog-card__date">01/04/2023</p>
                       <p class="blog-card__read">Читать статью</p>
-                    </div></a></li>
+                    </div></a>
+                </li>
               </ul>
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
             </div><a class="btn btn_primary blog__button" href="#">Другие материалы</a>
           </div>
         </section>
-        <section class="photo" id="photo">
+        <section class="photo page__container" id="photo">
           <div class="section-title photo__title">
             <h3 class="section-title__subtitle">Фото-отчет</h3>
             <h2 class="section-title__title">Делимся впечатлениями</h2>
           </div>
-          <div class="photo__grid">
-            <picture class="photo__img js-photo"><img src="./img/photo_1.jpg" alt="Каппадокия" loading="lazy"/>
-            </picture>
-            <picture class="photo__img js-photo"><img src="./img/photo_2.jpg" alt="Карта путешественника" loading="lazy"/>
-            </picture>
-            <picture class="photo__img js-photo"><img src="./img/photo_3.jpg" alt="Бурдж-эль-Араб" loading="lazy"/>
-            </picture>
-            <picture class="photo__img js-photo"><img src="./img/photo_4.jpg" alt="Морская бухта" loading="lazy"/>
-            </picture>
-            <picture class="photo__img js-photo"><img src="./img/photo_5.jpg" alt="Великий каньон" loading="lazy"/>
-            </picture>
-            <picture class="photo__img js-photo"><img src="./img/photo_6.jpg" alt="Заметки путешественника" loading="lazy"/>
-            </picture>
-          </div>
+          <ul class="photo__grid">
+            <li class="photo__img js-photo">
+              <picture>
+                <source srcset="./img/photo/photo_1.webp" type="image/webp"/><img src="./img/photo/photo_1.jpg" alt="Каппадокия" loading="lazy"/>
+              </picture>
+            </li>
+            <li class="photo__img js-photo">
+              <picture>
+                <source srcset="./img/photo/photo_2.webp" type="image/webp"/><img src="./img/photo/photo_2.jpg" alt="Карта путешественника" loading="lazy"/>
+              </picture>
+            </li>
+            <li class="photo__img js-photo">
+              <picture>
+                <source srcset="./img/photo/photo_3.webp" type="image/webp"/><img src="./img/photo/photo_3.jpg" alt="Бурдж-эль-Араб" loading="lazy"/>
+              </picture>
+            </li>
+            <li class="photo__img js-photo">
+              <picture>
+                <source srcset="./img/photo/photo_4.webp" type="image/webp"/><img src="./img/photo/photo_4.jpg" alt="Морская бухта" loading="lazy"/>
+              </picture>
+            </li>
+            <li class="photo__img js-photo">
+              <picture>
+                <source srcset="./img/photo/photo_5.webp" type="image/webp"/><img src="./img/photo/photo_5.jpg" alt="Великий каньон" loading="lazy"/>
+              </picture>
+            </li>
+            <li class="photo__img js-photo">
+              <picture>
+                <source srcset="./img/photo/photo_6.webp" type="image/webp"/><img src="./img/photo/photo_6.jpg" alt="Заметки путешественника" loading="lazy"/>
+              </picture>
+            </li>
+          </ul>
           <div class="swiper photo__swiper">
-            <div class="swiper-wrapper swiper-wrapper_bottom">
-              <picture class="photo__img js-photo-swiper swiper-slide"><img src="./img/photo_1.jpg" alt="Каппадокия" loading="lazy"/>
-              </picture>
-              <picture class="photo__img js-photo-swiper swiper-slide"><img src="./img/photo_2.jpg" alt="Карта путешественника" loading="lazy"/>
-              </picture>
-              <picture class="photo__img js-photo-swiper swiper-slide"><img src="./img/photo_3.jpg" alt="Бурдж-эль-Араб" loading="lazy"/>
-              </picture>
-              <picture class="photo__img js-photo-swiper swiper-slide"><img src="./img/photo_4.jpg" alt="Морская бухта" loading="lazy"/>
-              </picture>
-              <picture class="photo__img js-photo-swiper swiper-slide"><img src="./img/photo_5.jpg" alt="Великий каньон" loading="lazy"/>
-              </picture>
-              <picture class="photo__img js-photo-swiper swiper-slide"><img src="./img/photo_6.jpg" alt="Заметки путешественника" loading="lazy"/>
-              </picture>
-            </div>
+            <ul class="swiper-wrapper photo__swiper-wrapper photo__swiper-wrapper_bottom">
+              <li class="photo__img js-photo-swiper swiper-slide">
+                <picture>
+                  <source srcset="./img/photo/photo_1.webp" type="image/webp"/><img src="./img/photo/photo_1.jpg" alt="Каппадокия" loading="lazy"/>
+                </picture>
+              </li>
+              <li class="photo__img js-photo-swiper swiper-slide">
+                <picture>
+                  <source srcset="./img/photo/photo_2.webp" type="image/webp"/><img src="./img/photo/photo_2.jpg" alt="Карта путешественника" loading="lazy"/>
+                </picture>
+              </li>
+              <li class="photo__img js-photo-swiper swiper-slide">
+                <picture>
+                  <source srcset="./img/photo/photo_3.webp" type="image/webp"/><img src="./img/photo/photo_3.jpg" alt="Бурдж-эль-Араб" loading="lazy"/>
+                </picture>
+              </li>
+              <li class="photo__img js-photo-swiper swiper-slide">
+                <picture>
+                  <source srcset="./img/photo/photo_4.webp" type="image/webp"/><img src="./img/photo/photo_4.jpg" alt="Морская бухта" loading="lazy"/>
+                </picture>
+              </li>
+              <li class="photo__img js-photo-swiper swiper-slide">
+                <picture>
+                  <source srcset="./img/photo/photo_5.webp" type="image/webp"/><img src="./img/photo/photo_5.jpg" alt="Великий каньон" loading="lazy"/>
+                </picture>
+              </li>
+              <li class="photo__img js-photo-swiper swiper-slide">
+                <picture>
+                  <source srcset="./img/photo/photo_6.webp" type="image/webp"/><img src="./img/photo/photo_6.jpg" alt="Заметки путешественника" loading="lazy"/>
+                </picture>
+              </li>
+            </ul>
             <div class="swiper-pagination"></div>
           </div><a class="btn btn_primary photo__button" href="#">Наш pinterest</a>
         </section>
-        <section class="newsletter" id="newsletter">
-          <div class="newsletter__wrap">
-            <div class="newsletter__container">
-              <div class="newsletter__title-wrap">
-                <h3 class="newsletter__subtitle">Актуально</h3>
-                <h2 class="newsletter__title">Получайте полезные рассылки о путешествиях</h2>
-                <h2 class="newsletter__title_mobile">Полезные рассылки</h2>
-              </div>
-              <form class="form newsletter__form" name="newsletter" novalidate>
-                <label class="form__label newsletter__label" for="email-input">Введите e-mail адрес</label><span class="form__error email-input-error newsletter__error">(name@domain.ru)</span>
-                <input class="newsletter__input form__input" id="email-input" required type="email" name="email" autocomplete="off" placeholder="name@domain.ru">
-                <button class="btn btn_primary newsletter__button form__button" type="submit">Подписаться на новости</button>
-                <p class="newsletter__caption">
-                  Подписываясь на новости, вы автоматически соглашаетесь с
-                  <a class="newsletter__link link-hover" href="./files/privacy-policy.pdf" target="_blank">условиями обработки персональных данных</a>
-                  и
-                  <a class="newsletter__link link-hover" href="./files/rules-of-advertising-mailings.pdf" target="_blank">правилами рекламных рассылок</a>
-                </p>
-              </form>
+        <section class="newsletter page__container page__container_type_newsletter" id="newsletter">
+          <div class="newsletter__container">
+            <div class="newsletter__title-wrap">
+              <h3 class="newsletter__subtitle">Актуально</h3>
+              <h2 class="newsletter__title">Получайте полезные рассылки о путешествиях</h2>
+              <h2 class="newsletter__title_mobile">Полезные рассылки</h2>
             </div>
+            <form class="form newsletter__form" name="newsletter" novalidate>
+              <label class="form__label newsletter__label" for="email-input">Введите e-mail адрес</label><span class="form__error email-input-error newsletter__error">(name@domain.ru)</span>
+              <input class="newsletter__input form__input" id="email-input" required type="email" name="email" autocomplete="off" placeholder="name@domain.ru">
+              <button class="btn btn_primary newsletter__button form__button" type="submit">Подписаться на новости</button>
+              <p class="newsletter__caption">
+                Подписываясь на новости, вы автоматически соглашаетесь с
+                <a class="newsletter__link link-hover" href="./files/privacy-policy.pdf" target="_blank">условиями обработки персональных данных</a>
+                и
+                <a class="newsletter__link link-hover" href="./files/rules-of-advertising-mailings.pdf" target="_blank">правилами рекламных рассылок</a>
+              </p>
+            </form>
           </div>
         </section>
       </main>
@@ -535,22 +630,40 @@
           </button>
           <div class="swiper modal__swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img class="modal__img" src="./img/photo_1.jpg" alt="Каппадокия" loading="lazy"/>
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./img/photo/big/photo_1-big.webp" type="image/webp"/><img class="modal__img" src="./img/photo/big/photo_1-big.jpg" alt="Каппадокия" loading="lazy"/>
+                </picture>
                 <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
-              <div class="swiper-slide"><img class="modal__img" src="./img/photo_2.jpg" alt="Карта путешественника" loading="lazy"/>
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./img/photo/big/photo_2-big.webp" type="image/webp"/><img class="modal__img" src="./img/photo/big/photo_2-big.jpg" alt="Карта путешественника" loading="lazy"/>
+                </picture>
                 <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
-              <div class="swiper-slide"><img class="modal__img" src="./img/photo_3.jpg" alt="Бурдж-эль-Араб" loading="lazy"/>
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./img/photo/big/photo_3-big.webp" type="image/webp"/><img class="modal__img" src="./img/photo/big/photo_3-big.jpg" alt="Бурдж-эль-Араб" loading="lazy"/>
+                </picture>
                 <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
-              <div class="swiper-slide"><img class="modal__img" src="./img/photo_4.jpg" alt="Морская бухта" loading="lazy"/>
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./img/photo/big/photo_4-big.webp" type="image/webp"/><img class="modal__img" src="./img/photo/big/photo_4-big.jpg" alt="Морская бухта" loading="lazy"/>
+                </picture>
                 <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
-              <div class="swiper-slide"><img class="modal__img" src="./img/photo_5.jpg" alt="Великий каньон" loading="lazy"/>
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./img/photo/big/photo_5-big.webp" type="image/webp"/><img class="modal__img" src="./img/photo/big/photo_5-big.jpg" alt="Великий каньон" loading="lazy"/>
+                </picture>
                 <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
-              <div class="swiper-slide"><img class="modal__img" src="./img/photo_6.jpg" alt="Заметки путешественника" loading="lazy"/>
+              <div class="swiper-slide">
+                <picture>
+                  <source srcset="./img/photo/big/photo_6-big.webp" type="image/webp"/><img class="modal__img" src="./img/photo/big/photo_6-big.jpg" alt="Заметки путешественника" loading="lazy"/>
+                </picture>
                 <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
               </div>
             </div>
