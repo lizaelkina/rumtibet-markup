@@ -2,15 +2,16 @@
   z-index: 3;
   position: fixed;
   top: 0;
-  right: -100%;
+  left: 0;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: end;
-  transition: right .5s ease;
+  transform: translateX(100%);
+  transition: transform .5s ease;
 
   &_opened {
-    right: 0;
+    transform: translateX(0);
   }
 
   &__container {
